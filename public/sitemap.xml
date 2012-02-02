@@ -1,11 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://test.stevenharman.net/blog/archives/</loc>
-        <lastmod>2012-02-01T18:32:03-05:00</lastmod>
+        <loc>
+            http://stevenharman.heroku.com/gain-new-insights-by-visualizing-what-youve-already-got/
+        </loc>
+        <lastmod>2012-02-01T22:45:54-05:00</lastmod>
     </url>
     <url>
-        <loc>http://test.stevenharman.net/</loc>
-        <lastmod>2012-02-01T19:29:03-05:00</lastmod>
+        <loc>
+            http://stevenharman.heroku.com/another-git-repository-visualization-just-for-fun/
+        </loc>
+        <lastmod>2012-02-01T22:49:00-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://stevenharman.heroku.com/blog/archives/</loc>
+        <lastmod>2012-02-01T22:49:00-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://stevenharman.heroku.com/</loc>
+        <lastmod>2012-02-01T22:49:00-05:00</lastmod>
     </url>
 </urlset>
