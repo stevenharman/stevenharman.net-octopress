@@ -4,7 +4,7 @@
 
 url: http://test.stevenharman.net
 title: Steven Harman
-subtitle: Living. Learning. Improving.
+subtitle: Maker and Breaker of Things
 author: Steven Harman
 simple_search: http://google.com/search
 description:
@@ -59,7 +59,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 
 # Github repositories
 github_user: stevenharman
-github_repo_count: 0
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
