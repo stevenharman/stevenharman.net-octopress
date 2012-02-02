@@ -5,3 +5,7 @@ header {
   h1, h2 { display: inline-block; }
   h2 { text-transform: lowercase; }
 }
+
+ul, ol {
+  margin-left: 1.5em;
+}

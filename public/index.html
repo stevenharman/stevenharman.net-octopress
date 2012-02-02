@@ -140,25 +140,58 @@
   </header>
 
 
-  <div class="entry-content"><div class="thumbnail right"><a title="Y U NO REBASE!?!" href="https://skitch.com/stevenharman/fdhm5/y-u-no-rebase"><img class="right" title="Y U NO REBASE!?!" alt="y-u-no-rebase" src="https://img.skitch.com/20110609-jhy91eh42t193wquj6ryi91ura.preview.jpg" /></a>     <br /><span class="smallnote">Uploaded with <a href="http://skitch.com">Skitch</a>!</span></div>
+  <div class="entry-content"><p>To rebase, or not to rebase - for me its not really a question. I
+generally prefer a clean, linear commit history. Why? Because merge bubbles make
+history confusing, noisy, break <code>git bisect</code>.</p>
+
+<p><a href="https://skitch.com/stevenharman/fdhm5/y-u-no-rebase"><img class="thumbnail right" src="https://img.skitch.com/20110609-jhy91eh42t193wquj6ryi91ura.preview.jpg" title="Y U NO REBASE!?!" alt="y-u-no-rebase"></a>
+Don&#8217;t believe me? Check out the pretty log to the right. See all
+those merge bubbles in there? <em>Eww!</em></p>
+
+<h3>The Why?</h3>
 
 
-<p>  <p>To rebase, or not to rebase… for me its not really a question. I generally prefer a clean, linear commit history. Why? Because merge bubbles make history confusing, noisy, break <code>git bisect</code>.</p>  <p>Don’t believe me? Check out the pretty log to the right. See all those merge bubbles in there? <em>Eww!</em></p>  <h3>The Why?</h3>  <p>The workflow that caused those merges was as follows:</p>  <ol>   <li><code>git pull</code> (to bring local up to date) </li>    <li><em>hackity-hack</em> </li>    <li><code>git commit</code> </li>    <li><code>git pull</code> </li>    <li><code>git push</code> </li> </ol>  <p>By default <code>git pull</code> will fetch any new commits from the remote, and then merge any local changes in, resulting in the merge bubbles.</p>  <h3>A better approach</h3>  <p>I typically use the same workflow as above with one tweak. Rather than <code>git pull</code>, I use <code>git pull --rebase</code>, which will fetch the remote commits, and rebase your commits on top of the new commits from the remote. This is the “re-writing” of history folks often talk about.</p>  <h3>Make it better, automatically!</h3>  <p>You can tell git to use rebase, rather than merge, in one of two ways, depending on your situation.</p>  <p>To have all future branches automatically use rebase</p>  <div class="csharpcode">   <pre class="alt">$ git config branch.autosetuprebase always</pre>
-</div></p>
+<p>The workflow that caused those merges was as follows:</p>
 
-<p>You can add the <code>--global</code> switch to have all future branches, in all repositories on this machine, behave this way.</p>
-
-
-
-
-<p>If, however, you have an existing branch, you’ll need</p>
-
-
+<ol>
+<li><code>git pull</code> (to bring local up to date)</li>
+<li><em>hackity-hack</em></li>
+<li><code>git commit</code></li>
+<li><code>git pull</code></li>
+<li><code>git push</code></li>
+</ol>
 
 
-<div class="csharpcode">
-  <pre class="alt">$ git config branch.<em>branch-name</em>.rebase true</pre>
-</div>
+<p>By default <code>git pull</code> will fetch any new commits from the remote, and
+then merge any local changes in, resulting in the merge bubbles.</p>
+
+<h3>A better approach</h3>
+
+
+<p>I typically use the same workflow as above with one tweak. Rather than <code>git
+pull</code> I use <code>git pull --rebase</code> which will fetch the remote commits,
+and rebase your commits on top of the new commits from the remote. This is the
+&acirc;&euro;&oelig;re-writing&acirc;&euro; of history folks often talk about.</p>
+
+<h3>Make it better, automatically!</h3>
+
+
+<p>You can tell git to use rebase, rather than merge, in one of two ways, depending on
+your situation.</p>
+
+<figure class='code'><figcaption><span>Force all new branches to automatically use rebase  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git config branch.autosetuprebase always
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can add the <code>--global</code> switch to have all future branches, in all
+repositories on this machine, behave this way.</p>
+
+<figure class='code'><figcaption><span>Force existing branches to use rebase.  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git config branch.*branch-name*.rebase <span class="nb">true</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -166,15 +199,78 @@
 <h3>Get more info</h3>
 
 
+<p>Be sure to check out the <a title="git-config Manual Page" href=
+"http://www.kernel.org/pub/software/scm/git/docs/git-config.html" rel="external">git
+man pages</a> for more info on what those options mean and when you may or may not want
+to use them.</p>
+
+<p>You might also want to check out my <a title="Git Workflows" href=
+"https://github.com/stevenharman/git-workflows" rel="external">Git Workflows repository
+on The GitHubs</a> where you can find a Keynote presentation (or PDF in the Downloads)
+explaining <code>git rebase</code> vs. <code>git merge</code> Complete with
+pictures!</p>
+</div>
+  
+  
 
 
-<p>Be sure to check out the <a title="git-config Manual Page" href="http://www.kernel.org/pub/software/scm/git/docs/git-config.html" rel="external">git man pages</a> for more info on what those options mean and when you may or may not want to use them. </p>
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/an-io-language-vim-plugin/">An Io Language Vim Plugin</a></h1>
+    
+    
+      <p class="meta">
+        
 
 
 
 
-<p>You might also want to check out my <a title="Git Workflows" href="https://github.com/stevenharman/git-workflows" rel="external">Git Workflows repository on The GitHubs</a> where you can find a Keynote presentation (or PDF in the Downloads) explaining <code>git rebase</code> vs. <code>git merge</code>. Complete with pictures!</p>
 
+
+
+
+  
+
+
+<time datetime="2011-02-11T16:27:00-05:00" pubdate data-updated="true">Feb 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Who here doesn&#8217;t enjoy a little color in their life? I know I do, especially when
+used to highlight the syntax of a language - as anyone who&#8217;s been around me while
+downing a few pints can attest!</p>
+
+<h3>Learning, Io, and Vim</h3>
+
+
+<p><a href="/images/posts/io-syntax.png"><img class="left" src="/images/posts/io-syntax-thumb.png" title="Io Syntax Highlighting in Vim" ></a></p>
+
+<p>In an attempt to feed our insatiable desire to learn, a
+few of us at <a title="VersionOne: Simplifying Software Delivery" href=
+"http://versionone.com" rel="external">VersionOne</a> are doing a book club on
+<a title="Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
+href=
+"http://www.amazon.com/gp/product/193435659X?ie=UTF8&amp;tag=stevenharman-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=193435659X"
+rel="external">Seven Languages in Seven Weeks</a>. We&#8217;re currently working on chapter
+2: <a title="Io Language" href="http://iolanguage.com/" rel="external">Io</a>. My
+current favorite editor is Vim. I wanted syntax highlighting for Io, in Vim.</p>
+
+<p>I found a decent Vim script to get Io syntax highlighting, and then wrote a quick
+<code>ftdetect</code> script to set Io-related files to use the Io syntax. The
+resulting vim-io plugin is currently embedded <a title="vim-io: Io, for Vim!" href=
+"https://github.com/stevenharman/config/tree/master/.vim/bundle/vim-io" rel=
+"external">in my dotfiles on the GitHubs</a>, but if there&#8217;s interest I can pull them
+out into a standalone plugin.</p>
+
+<p>Grab it, enjoy it, fork and improve it!</p>
 </div>
   
   
@@ -267,6 +363,10 @@
     
       <li class="post">
         <a href="/git-pull-with-automatic-rebase/">Git Pull with Automatic Rebase</a>
+      </li>
+    
+      <li class="post">
+        <a href="/an-io-language-vim-plugin/">An Io Language Vim Plugin</a>
       </li>
     
       <li class="post">
