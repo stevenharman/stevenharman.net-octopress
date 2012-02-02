@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Another Git Repository Visualization, Just for Fun. - Steven Harman</title>
+  <title>Git Pull with Automatic Rebase - Steven Harman</title>
   <meta name="author" content="Steven Harman">
 
   
-  <meta name="description" content="I’ve created visualizations for Git repositories before – the one tracked a product from its first commit through launch. And while I still think &hellip;">
+  <meta name="description" content="Uploaded with Skitch! To rebase, or not to rebase… for me its not really a question. I generally prefer a clean, linear commit history. Why? Because &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://stevenharman.heroku.com/another-git-repository-visualization-just-for-fun">
+  <link rel="canonical" href="http://stevenharman.heroku.com/git-pull-with-automatic-rebase">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Another Git Repository Visualization, Just for Fun.</h1>
+      <h1 class="entry-title">Git Pull With Automatic Rebase</h1>
     
     
       <p class="meta">
@@ -83,24 +83,47 @@
   
 
 
-<time datetime="2011-07-01T21:46:00-04:00" pubdate data-updated="true">Jul 1<span>st</span>, 2011</time>
+<time datetime="2011-06-09T22:57:00-04:00" pubdate data-updated="true">Jun 9<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I’ve created visualizations for Git repositories before – the one tracked a <a href="http://stevenharman.heroku.com/gain-new-insights-by-visualizing-what-youve-already-got" title="Gain New Insights by Visualizing What You’ve Already Got">product from its first commit through launch</a>. And while I still think there is some information and insight to be gleaned from such visualizations, the real reason I like to make them is&#8230; I think they&#8217;re neat.</p>
-
-<p>To celebrate launching the latest incarnation of <a href="http://versionone.com/" title="VersionOne - it's pronounced Agilé">VersionOne</a>, I made another visualization! This one tracks all changes made in our Git repository that occurred between our last major release (in late February) right through the very last commit that made it into the <a href="http://www.versionone.com/release/2011/spring/" title="VersionOne Spring 2011 Release">Spring 2011 release</a>.</p>
-
-<p>Wow… that really sounded like a sales pitch, didn’t it? I hate sales pitches!</p>
-
-<p>Enough of that. Enjoy!</p>
-
-<object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/fYv9XgzY9Cc?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/fYv9XgzY9Cc?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<div class="entry-content"><div class="thumbnail right"><a title="Y U NO REBASE!?!" href="https://skitch.com/stevenharman/fdhm5/y-u-no-rebase"><img class="right" title="Y U NO REBASE!?!" alt="y-u-no-rebase" src="https://img.skitch.com/20110609-jhy91eh42t193wquj6ryi91ura.preview.jpg" /></a>     <br /><span class="smallnote">Uploaded with <a href="http://skitch.com">Skitch</a>!</span></div>
 
 
+<p>  <p>To rebase, or not to rebase… for me its not really a question. I generally prefer a clean, linear commit history. Why? Because merge bubbles make history confusing, noisy, break <code>git bisect</code>.</p>  <p>Don’t believe me? Check out the pretty log to the right. See all those merge bubbles in there? <em>Eww!</em></p>  <h3>The Why?</h3>  <p>The workflow that caused those merges was as follows:</p>  <ol>   <li><code>git pull</code> (to bring local up to date) </li>    <li><em>hackity-hack</em> </li>    <li><code>git commit</code> </li>    <li><code>git pull</code> </li>    <li><code>git push</code> </li> </ol>  <p>By default <code>git pull</code> will fetch any new commits from the remote, and then merge any local changes in, resulting in the merge bubbles.</p>  <h3>A better approach</h3>  <p>I typically use the same workflow as above with one tweak. Rather than <code>git pull</code>, I use <code>git pull --rebase</code>, which will fetch the remote commits, and rebase your commits on top of the new commits from the remote. This is the “re-writing” of history folks often talk about.</p>  <h3>Make it better, automatically!</h3>  <p>You can tell git to use rebase, rather than merge, in one of two ways, depending on your situation.</p>  <p>To have all future branches automatically use rebase</p>  <div class="csharpcode">   <pre class="alt">$ git config branch.autosetuprebase always</pre>
+</div></p>
+
+<p>You can add the <code>--global</code> switch to have all future branches, in all repositories on this machine, behave this way.</p>
+
+
+
+
+<p>If, however, you have an existing branch, you’ll need</p>
+
+
+
+
+<div class="csharpcode">
+  <pre class="alt">$ git config branch.<em>branch-name</em>.rebase true</pre>
+</div>
+
+
+
+
+<h3>Get more info</h3>
+
+
+
+
+<p>Be sure to check out the <a title="git-config Manual Page" href="http://www.kernel.org/pub/software/scm/git/docs/git-config.html" rel="external">git man pages</a> for more info on what those options mean and when you may or may not want to use them. </p>
+
+
+
+
+<p>You might also want to check out my <a title="Git Workflows" href="https://github.com/stevenharman/git-workflows" rel="external">Git Workflows repository on The GitHubs</a> where you can find a Keynote presentation (or PDF in the Downloads) explaining <code>git rebase</code> vs. <code>git merge</code>. Complete with pictures!</p>
 
 </div>
 
@@ -124,7 +147,7 @@
   
 
 
-<time datetime="2011-07-01T21:46:00-04:00" pubdate data-updated="true">Jul 1<span>st</span>, 2011</time>
+<time datetime="2011-06-09T22:57:00-04:00" pubdate data-updated="true">Jun 9<span>th</span>, 2011</time>
       
 
 
@@ -132,7 +155,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/another-git-repository-visualization-just-for-fun/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/another-git-repository-visualization-just-for-fun/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/git-pull-with-automatic-rebase/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/git-pull-with-automatic-rebase/" >Tweet</a>
   
   
   
@@ -141,8 +164,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/git-pull-with-automatic-rebase/" title="Previous Post: Git Pull with Automatic Rebase">&laquo; Git Pull with Automatic Rebase</a>
+        <a class="basic-alignment left" href="/gain-new-insights-by-visualizing-what-youve-already-got/" title="Previous Post: Gain New Insights by Visualizing What You’ve Already Got">&laquo; Gain New Insights by Visualizing What You’ve Already Got</a>
       
+      
+        <a class="basic-alignment right" href="/another-git-repository-visualization-just-for-fun/" title="next Post: Another Git Repository Visualization, Just for Fun.">Another Git Repository Visualization, Just for Fun. &raquo;</a>
       
     </p>
   </footer>
