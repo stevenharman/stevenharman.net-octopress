@@ -17,6 +17,8 @@ Bailey's blog">Derick Bailey</a> decided it was time to bite the bullet
 and start building some *[real Rake tasks][2]* that were special suited
 for building .net code. The result is [Albacore][3].
 
+<!-- more -->
+
 ### Using Rake for .net <acronym title="In Real Life">IRL</acronym>
 
 I've been using Rake to [be lazy][4] for a while. And we, the

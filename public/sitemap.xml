@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://stevenharman.heroku.com/reading-code-is-key-to-writing-good-code/</loc>
+        <lastmod>2012-02-04T14:14:34-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://stevenharman.heroku.com/omg-better-rake-for-.net/</loc>
-        <lastmod>2012-02-04T14:03:43-05:00</lastmod>
+        <lastmod>2012-02-04T14:15:31-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenharman.heroku.com/yagni-ainrsquot-what-you-thing-it-is/</loc>
@@ -54,10 +58,10 @@
     </url>
     <url>
         <loc>http://stevenharman.heroku.com/archives/</loc>
-        <lastmod>2012-02-04T14:03:43-05:00</lastmod>
+        <lastmod>2012-02-04T14:15:31-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenharman.heroku.com/</loc>
-        <lastmod>2012-02-04T14:03:43-05:00</lastmod>
+        <lastmod>2012-02-04T14:15:31-05:00</lastmod>
     </url>
 </urlset>

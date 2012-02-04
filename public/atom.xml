@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T14:03:43-05:00</updated>
+  <updated>2012-02-04T14:15:31-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -432,6 +432,9 @@ Bailey's blog">Derick Bailey</a> decided it was time to bite the bullet
 and start building some <em><a href="http://www.lostechies.com/blogs/derickbailey/archive/2009/09/17/how-a-net-developer-hacked-out-a-rake-task.aspx" title="How A .NET Developer Hacked Out a Rake Task">real Rake tasks</a></em> that were special suited
 for building .net code. The result is <a href="http://github.com/derickbailey/Albacore" title="Albacore: A Suite Of Rake Build Tasks For .NET Solutions">Albacore</a>.</p>
 
+<!-- more -->
+
+
 <h3>Using Rake for .net <acronym title="In Real Life">IRL</acronym></h3>
 
 <p>I&#8217;ve been using Rake to <a href="http://stevenharman.net/blog/archive/2009/05/29/being-lazy-with-rake.aspx" title="Being Lazy with Rake">be lazy</a> for a while. And we, the
@@ -488,6 +491,51 @@ Rake. Look for it soon!</p>
 <li><a href="http://wiki.github.com/derickbailey/Albacore" title="Albacore Wiki">Albacore Wiki</a></li>
 <li><a href="http://codebetter.com/blogs/david_laribee/archive/2008/08/25/omg-rake.aspx" title="OMG Rake!">OMG Rake!</a> - The original post which first inspired many to
 use Rake with .net</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reading Code is Key to Writing Good Code]]></title>
+    <link href="http://stevenharman.heroku.com/reading-code-is-key-to-writing-good-code/"/>
+    <updated>2009-11-18T14:06:00-05:00</updated>
+    <id>http://stevenharman.heroku.com/reading-code-is-key-to-writing-good-code</id>
+    <content type="html"><![CDATA[<p>As humans we seem to have an innate desire for structure in our lives. Structure permeates through our societies; it&#8217;s found within our families, education systems, governments, etc. I suppose it&#8217;s no surprise then that we also seek to <em>force</em> structure upon the work that we, as software developers, do.</p>
+
+<p>The problem is the work we do isn&#8217;t structured. It is not deterministic. There is no grand blue print, process, nor methodology that we can follow to pay dirt.</p>
+
+<p>We live in a chaotic and complex world that is itself continuously changing and adapting.</p>
+
+<p>Software product development is a creative activity taking place in the midst of that complex and adaptive world. So doesn&#8217;t it make sense that we, as software developers, might benefit from admitting that we are indeed doing creative, unstructured, adaptive work? <em>I sure think so!</em></p>
+
+<!-- more -->
+
+
+<h3>Looking outward for inspiration</h3>
+
+<p>I&#8217;ve recently been looking outward to other creative professions and trades for inspiration and insights into how they work. One thing I&#8217;ve realized is that those folks spend an immense amount of time studying and seeking inspiration from the work of others both within and outside their own field.</p>
+
+<p>For example, a musician doesn&#8217;t just sit in his garage all day, banging out albums. He listens to and is influenced by the music of many other musicians. An author doesn&#8217;t simply site down and write manuscript after manuscript. She spends countless hours reading the classics, studying the words, flow, and style of other authors. The same thing goes for painters, actors, architects, etc. And all of these people are constantly immersing them selves in works outside their area; musicians reading Hemingway, singer/song writers studying Salvador Dali, painters listening to Mozart, cats and dogs living together&#8230;</p>
+
+<p>How arrogant of we programmers then to think that we won&#8217;t, or don&#8217;t, benefit from reading code written by - <em>gasp</em> - someone else!</p>
+
+<h3>Read, learn, and be inspired</h3>
+
+<p><img class="right" src="http://stevenharman.heroku.com/images/posts/text.jpg" title="Yay for reading!" >
+In my experience we spend a great deal more time reading code than actually <em>writing</em> it. Whether it be the code you wrote just a few minutes ago or something you&#8217;ve inherited and are now maintaining, you&#8217;re reading it. Of course, that&#8217;s only considering the motive of reading code because you&#8217;re currently working with.</p>
+
+<p>The greatest motivator for reading code is the opportunity it provides for learning and serving as a source of inspiration. Reading code exposes you to techniques, view points, styles, idioms, and algorithms that you may not have otherwise come across.</p>
+
+<p>In my own career it was by reading code written in Ruby that I first started to develop an appreciation for beauty and aesthetics in code. It also opened me to new ways of thinking about problems and exposed many pains and frictions with the techniques I had been using to that point.</p>
+
+<h3>Where to start?</h3>
+
+<p>I realize it&#8217;s probably obvious, but I&#8217;m going to say it anyhow - a great way to start reading other&#8217;s code is to pull down an Open Source project and dive in. Of course, that&#8217;s not to say that all Open Source code bases are necessarily examples of great code&#8217; so you might also want to leverage your network to find examples. Or, use your Google-fu to see what others are reading. Or maybe check out:</p>
+
+<ul>
+<li><a href="http://katas.softwarecraftsmanship.org/" title="Software Craftsmanship - Katas">Katacasts</a> by <a title="Corey Haines" href="http://www.coreyhaines.com/" rel="friend met">Corey Haines</a> and Chris Parsons</li>
+<li><a href="http://www.hanselman.com/blog/CategoryView.aspx?category=Source+Code">The Weekly Source Code</a> series by <a title="Scott Hanselman's Computer Zen" href="http://www.hanselman.com" rel="colleague met">Scott Hanselman</a></li>
 </ul>
 
 ]]></content>
