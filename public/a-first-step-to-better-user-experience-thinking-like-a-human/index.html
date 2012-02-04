@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Caps Lock is Dumb; Make it Useful - Steven Harman</title>
+  <title>A First Step to Better User Experience: Thinking Like a Human - Steven Harman</title>
   <meta name="author" content="Steven Harman">
 
   
-  <meta name="description" content="I&#8217;ve long thought that Caps Lock was quite dumb. Yes, I&#8217;m sure there
-is some archaic reason it exists, but the truth is I don&#8217;t &hellip;">
+  <meta name="description" content="As we strive to build more humane user experiences it is important to
+not only consider what data to, or not to, show, but also how we
+present that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ is some archaic reason it exists, but the truth is I don&#8217;t &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful">
+  <link rel="canonical" href="http://stevenharman.heroku.com/a-first-step-to-better-user-experience-thinking-like-a-human">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +69,7 @@ is some archaic reason it exists, but the truth is I don&#8217;t &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Caps Lock Is Dumb; Make It Useful</h1>
+      <h1 class="entry-title">A First Step to Better User Experience: Thinking Like a Human</h1>
     
     
       <p class="meta">
@@ -84,52 +85,36 @@ is some archaic reason it exists, but the truth is I don&#8217;t &hellip;">
   
 
 
-<time datetime="2011-01-20T12:00:00-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+<time datetime="2010-12-08T12:18:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2010</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I&#8217;ve long thought that <code>Caps Lock</code> was quite dumb. Yes, I&#8217;m sure there
-is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#8217;t
-find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
-title="The Home Row and Touch Typing"
-href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
-Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
+<div class="entry-content"><p>As we strive to build more humane user experiences it is important to
+not only consider what data to, or <em>not to</em>, show, but also <em>how</em> we
+present that data.</p>
 
-<h3>Making Caps Lock Useful, on The Mac</h3>
+<p>An example from our recent <a title="VersionOne: Conversations"
+href="http://versionone.com/Product/Collaboration.asp"
+rel="external">Conversations</a> feature is the date and time at which
+portions of a conversation take place.</p>
 
-<p>I long ago remapped <code>Caps Lock</code> to <code>Esc</code> on my Mac - which worked
-great for <a title="the missing editor" href="http://macromates.com/"
-rel="external">TextMate</a>. However, these days I spend the majority of
-my time in <a title="Vim for the Mac"
-href="http://code.google.com/p/macvim/" rel="external">Vim</a> or <a
-title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
-Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
-Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
-via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
+<p><a href="/images/posts/fuzzy-time.png"><img class="left" src="/images/posts/fuzzy-time-thumb.png" title="humate date and time via jquery.timeago" ></a>
+Notice the two highlighted areas. The
+tooltip shows fully-formatted, and much more precise information, with
+the &#8220;less than a minute ago&#8221; text being a more fuzzy, human-friendly
+presentation of the same data.</p>
 
-<h3>Making Caps Lock Useful, on The Windows</h3>
+<p>There is no question that the precise data is valuable, but when it
+comes to human users of a system, it may not be the most consumable
+form. The full-fidelity information is still available to the user who
+cares to engage the application, when he cares to engage it.</p>
 
-<p>To my knowledge, there is nothing baked into the <acronym
-title="Operating System">OS</acronym> that makes this easy, but there
-are a handful of utilities that will let you remap most keys. I opted
-for the Lo-Fi route - hacking the registry to remap <code>Caps Lock</code> to
-<code>Ctrl</code>.</p>
-
-<div><script src='https://gist.github.com/788631.js?file='></script>
-<noscript><pre><code>REGEDIT4
- [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
- &quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
-</code></pre></noscript></div>
-
-
-<p>To use it, just download/save the raw <code>.reg</code> file to your Windows box,
-and the run (double-click, whatever) it.</p>
-
-<p>And there you have it. Good bye, annoying <code>Caps Lock</code>. Hello, useful
-stuff!</p>
+<p>Whether its fuzzy dates and time, or using avatars instead of user
+names, or any number of other examples, the point is to <em>think</em> about
+the human experience when designing for, well, humans.</p>
 </div>
 
 
@@ -152,7 +137,7 @@ stuff!</p>
   
 
 
-<time datetime="2011-01-20T12:00:00-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+<time datetime="2010-12-08T12:18:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2010</time>
       
 
 
@@ -160,7 +145,7 @@ stuff!</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/a-first-step-to-better-user-experience-thinking-like-a-human/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/a-first-step-to-better-user-experience-thinking-like-a-human/" >Tweet</a>
   
   
   
@@ -169,10 +154,10 @@ stuff!</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/a-first-step-to-better-user-experience-thinking-like-a-human/" title="Previous Post: A First Step to Better User Experience: Thinking Like a Human">&laquo; A First Step to Better User Experience: Thinking Like a Human</a>
+        <a class="basic-alignment left" href="/gain-new-insights-by-visualizing-what-youve-already-got/" title="Previous Post: Gain New Insights by Visualizing What You’ve Already Got">&laquo; Gain New Insights by Visualizing What You’ve Already Got</a>
       
       
-        <a class="basic-alignment right" href="/an-io-language-vim-plugin/" title="next Post: An Io Language Vim Plugin">An Io Language Vim Plugin &raquo;</a>
+        <a class="basic-alignment right" href="/caps-lock-is-dumb-make-it-useful/" title="next Post: Caps Lock is Dumb; Make it Useful">Caps Lock is Dumb; Make it Useful &raquo;</a>
       
     </p>
   </footer>

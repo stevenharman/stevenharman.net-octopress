@@ -7,6 +7,12 @@
         <lastmod>2012-02-01T22:45:54-05:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://stevenharman.heroku.com/a-first-step-to-better-user-experience-thinking-like-a-human/
+        </loc>
+        <lastmod>2012-02-04T12:29:33-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/</loc>
         <lastmod>2012-02-04T12:14:47-05:00</lastmod>
     </url>
@@ -25,11 +31,11 @@
         <lastmod>2012-02-01T22:49:00-05:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenharman.heroku.com/blog/archives/</loc>
-        <lastmod>2012-02-04T12:14:47-05:00</lastmod>
+        <loc>http://stevenharman.heroku.com/archives/</loc>
+        <lastmod>2012-02-04T12:29:33-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenharman.heroku.com/</loc>
-        <lastmod>2012-02-04T12:14:47-05:00</lastmod>
+        <lastmod>2012-02-04T12:29:33-05:00</lastmod>
     </url>
 </urlset>
