@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T13:56:22-05:00</updated>
+  <updated>2012-02-04T14:03:43-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -412,6 +412,84 @@ experience in the problem domain, while making concrete progress, is
 more important than trying to achieve a complete solution <em>right now</em>.</p>
 
 <p>Do you think it&#8217;s too early to update the <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it" title="You ain't gonna need it">Wikipedia article</a>?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OMG, Better Rake (for .net)!]]></title>
+    <link href="http://stevenharman.heroku.com/omg-better-rake-for-.net/"/>
+    <updated>2009-11-23T13:58:00-05:00</updated>
+    <id>http://stevenharman.heroku.com/omg-better-rake-for-.net</id>
+    <content type="html"><![CDATA[<p>If you ask me, when it comes tools for writing automated build scripts
+nothing packs more bang for the buck than <a href="http://rake.rubyforge.org/" title="Rake - Ruby Make">Rake</a>. Until recently,
+using Rake to build .net solutions required a magic concoction of hacked
+together scripts which rarely exhibited Ruby&#8217;s appreciation for beauty
+nor Rake&#8217;s spirit of simplicity.</p>
+
+<p>Luckily our buddy <a rel="met friend"
+href="http://www.lostechies.com/blogs/derickbailey/" title="Derick
+Bailey's blog">Derick Bailey</a> decided it was time to bite the bullet
+and start building some <em><a href="http://www.lostechies.com/blogs/derickbailey/archive/2009/09/17/how-a-net-developer-hacked-out-a-rake-task.aspx" title="How A .NET Developer Hacked Out a Rake Task">real Rake tasks</a></em> that were special suited
+for building .net code. The result is <a href="http://github.com/derickbailey/Albacore" title="Albacore: A Suite Of Rake Build Tasks For .NET Solutions">Albacore</a>.</p>
+
+<h3>Using Rake for .net <acronym title="In Real Life">IRL</acronym></h3>
+
+<p>I&#8217;ve been using Rake to <a href="http://stevenharman.net/blog/archive/2009/05/29/being-lazy-with-rake.aspx" title="Being Lazy with Rake">be lazy</a> for a while. And we, the
+<a href="http://versionone.com/" title="VersionOne: Simplifying Software Delivery">VersionOne</a> dudes &amp; dudettes, have been using it to help automate
+our <acronym title="Continuous Integration">CI</acronym> builds for over
+a year now. And just last week we started ditching much of our
+hacky-Rake-script inventory in favor of more concise, tested, and
+readable Rake tasks via Albacore.</p>
+
+<p>During the migration I&#8217;ve run into a few small hitches here and there,
+but nothing that I couldn&#8217;t track down, write a test for, and fix
+within a couple of <a href="http://www.infoq.com/news/2009/09/Pomodoro" title="Pomodoro - An Agile Approach to Time Management">tomatoes</a>. In one case I discovered an issue,
+called Derick to confirm, suggested a fix, and had a new Albacore Gem
+published within a couple of hours. <em>Hawt!</em></p>
+
+<p>Albacore already has a decent number of tasks baked in, and the list is
+growing all the time!</p>
+
+<ul>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/assemblyinfotask">AssemblyInfoTask</a> - Generate an AssemblyInfo.cs file.
+Currently only supports C#</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/expandtemplatestask">ExpandTemplatesTask</a> - expand template files with #{setting}
+markers, using YAML configuration files as the data</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ncoverconsoletask">NCoverConsoleTask</a> - Run code coverage analysis through NCover&#8217;s <code>NCover.Console</code></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ncoverreporttask">NCoverReportTask</a> - Check code coverage and get detailed
+reports through NCover&#8217;s <code>NCover.Reporting</code></li>
+<li>NUnitTask - run NUnit test suites</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/msbuildtask">MSBuildTask</a> - Build a Visual Studio solution (<code>.sln</code>) or
+MSBuild file</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/renametask">Rename Task</a> - Rename a file</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sftptask">SftpTask</a> - Upload a file to a remote server via secure FTP
+connection</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sqlcmdtask">SQLCmdTask</a> - Run scripts and other commands through SQL
+Server&#8217;s <code>sqlcmd.exe</code></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sshtask">SshTask</a> - Run a command on a remote system via a secure
+shell connection</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ziptask">ZipTask</a> - Package your build artifacts into a .zip for
+easier distribution source data</li>
+</ul>
+
+
+<h3>Contribute!</h3>
+
+<p>As we move more and more of our custom stuff over I&#8217;ll continue to add
+features to Albacore, enhancing the great work the core team is doing.
+In fact, I&#8217;m already planning a <a href="http://github.com/derickbailey/Albacore/issues/#issue/27" title="Albacore::NAntTask - for migrating to Rake">NAnt task</a> to help those folks in
+the process of migrating from an existing NAnt-based build script to
+Rake. Look for it soon!</p>
+
+<h3>Resources</h3>
+
+<ul>
+<li><a href="http://github.com/derickbailey/Albacore" title="Albacore: A Suite of Rake Build Tasks For .Net Solutions">Albacore on GitHub</a></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore" title="Albacore Wiki">Albacore Wiki</a></li>
+<li><a href="http://codebetter.com/blogs/david_laribee/archive/2008/08/25/omg-rake.aspx" title="OMG Rake!">OMG Rake!</a> - The original post which first inspired many to
+use Rake with .net</li>
+</ul>
+
 ]]></content>
   </entry>
   

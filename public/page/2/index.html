@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Steven Harman</title>
+  <meta name="author" content="Steven Harman">
+
+  
+  <meta name="description" content="If you ask me, when it comes tools for writing automated build scripts
+nothing packs more bang for the buck than Rake. Until recently,
+using Rake to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://stevenharman.heroku.com/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Steven Harman" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Steven Harman</a></h1>
+  
+    <h2>Maker and Breaker of Things</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:stevenharman.heroku.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/omg-better-rake-for-.net/">OMG, Better Rake (for .net)!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-23T13:58:00-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you ask me, when it comes tools for writing automated build scripts
+nothing packs more bang for the buck than <a href="http://rake.rubyforge.org/" title="Rake - Ruby Make">Rake</a>. Until recently,
+using Rake to build .net solutions required a magic concoction of hacked
+together scripts which rarely exhibited Ruby&#8217;s appreciation for beauty
+nor Rake&#8217;s spirit of simplicity.</p>
+
+<p>Luckily our buddy <a rel="met friend"
+href="http://www.lostechies.com/blogs/derickbailey/" title="Derick
+Bailey's blog">Derick Bailey</a> decided it was time to bite the bullet
+and start building some <em><a href="http://www.lostechies.com/blogs/derickbailey/archive/2009/09/17/how-a-net-developer-hacked-out-a-rake-task.aspx" title="How A .NET Developer Hacked Out a Rake Task">real Rake tasks</a></em> that were special suited
+for building .net code. The result is <a href="http://github.com/derickbailey/Albacore" title="Albacore: A Suite Of Rake Build Tasks For .NET Solutions">Albacore</a>.</p>
+
+<h3>Using Rake for .net <acronym title="In Real Life">IRL</acronym></h3>
+
+<p>I&#8217;ve been using Rake to <a href="http://stevenharman.net/blog/archive/2009/05/29/being-lazy-with-rake.aspx" title="Being Lazy with Rake">be lazy</a> for a while. And we, the
+<a href="http://versionone.com/" title="VersionOne: Simplifying Software Delivery">VersionOne</a> dudes &amp; dudettes, have been using it to help automate
+our <acronym title="Continuous Integration">CI</acronym> builds for over
+a year now. And just last week we started ditching much of our
+hacky-Rake-script inventory in favor of more concise, tested, and
+readable Rake tasks via Albacore.</p>
+
+<p>During the migration I&#8217;ve run into a few small hitches here and there,
+but nothing that I couldn&#8217;t track down, write a test for, and fix
+within a couple of <a href="http://www.infoq.com/news/2009/09/Pomodoro" title="Pomodoro - An Agile Approach to Time Management">tomatoes</a>. In one case I discovered an issue,
+called Derick to confirm, suggested a fix, and had a new Albacore Gem
+published within a couple of hours. <em>Hawt!</em></p>
+
+<p>Albacore already has a decent number of tasks baked in, and the list is
+growing all the time!</p>
+
+<ul>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/assemblyinfotask">AssemblyInfoTask</a> - Generate an AssemblyInfo.cs file.
+Currently only supports C#</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/expandtemplatestask">ExpandTemplatesTask</a> - expand template files with #{setting}
+markers, using YAML configuration files as the data</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ncoverconsoletask">NCoverConsoleTask</a> - Run code coverage analysis through NCover&#8217;s <code>NCover.Console</code></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ncoverreporttask">NCoverReportTask</a> - Check code coverage and get detailed
+reports through NCover&#8217;s <code>NCover.Reporting</code></li>
+<li>NUnitTask - run NUnit test suites</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/msbuildtask">MSBuildTask</a> - Build a Visual Studio solution (<code>.sln</code>) or
+MSBuild file</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/renametask">Rename Task</a> - Rename a file</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sftptask">SftpTask</a> - Upload a file to a remote server via secure FTP
+connection</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sqlcmdtask">SQLCmdTask</a> - Run scripts and other commands through SQL
+Server&#8217;s <code>sqlcmd.exe</code></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/sshtask">SshTask</a> - Run a command on a remote system via a secure
+shell connection</li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore/ziptask">ZipTask</a> - Package your build artifacts into a .zip for
+easier distribution source data</li>
+</ul>
+
+
+<h3>Contribute!</h3>
+
+<p>As we move more and more of our custom stuff over I&#8217;ll continue to add
+features to Albacore, enhancing the great work the core team is doing.
+In fact, I&#8217;m already planning a <a href="http://github.com/derickbailey/Albacore/issues/#issue/27" title="Albacore::NAntTask - for migrating to Rake">NAnt task</a> to help those folks in
+the process of migrating from an existing NAnt-based build script to
+Rake. Look for it soon!</p>
+
+<h3>Resources</h3>
+
+<ul>
+<li><a href="http://github.com/derickbailey/Albacore" title="Albacore: A Suite of Rake Build Tasks For .Net Solutions">Albacore on GitHub</a></li>
+<li><a href="http://wiki.github.com/derickbailey/Albacore" title="Albacore Wiki">Albacore Wiki</a></li>
+<li><a href="http://codebetter.com/blogs/david_laribee/archive/2008/08/25/omg-rake.aspx" title="OMG Rake!">OMG Rake!</a> - The original post which first inspired many to
+use Rake with .net</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/another-git-repository-visualization-just-for-fun/">Another Git Repository Visualization, Just for Fun.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/git-pull-with-automatic-rebase/">Git Pull with Automatic Rebase</a>
+      </li>
+    
+      <li class="post">
+        <a href="/an-io-language-vim-plugin/">An Io Language Vim Plugin</a>
+      </li>
+    
+      <li class="post">
+        <a href="/caps-lock-is-dumb-make-it-useful/">Caps Lock is Dumb; Make it Useful</a>
+      </li>
+    
+      <li class="post">
+        <a href="/a-first-step-to-better-user-experience-thinking-like-a-human/">A First Step to Better User Experience: Thinking Like a Human</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/stevenharman">@stevenharman</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'stevenharman',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("stevenharman", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/stevenharman" class="twitter-follow-button" data-show-count="false">Follow @stevenharman</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Steven Harman -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
