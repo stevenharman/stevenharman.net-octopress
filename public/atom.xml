@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T13:30:34-05:00</updated>
+  <updated>2012-02-04T13:56:22-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -377,6 +377,41 @@ and context necessary to effectively solve the problems we&#8217;re faced
 with, to grow, and to improve.</p>
 
 <p>So, <em>why</em> are you reading this post? :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[YAGNI Ain't What You Thing It Is]]></title>
+    <link href="http://stevenharman.heroku.com/yagni-ainrsquot-what-you-thing-it-is/"/>
+    <updated>2010-01-07T13:33:00-05:00</updated>
+    <id>http://stevenharman.heroku.com/yagni-ainrsquot-what-you-thing-it-is</id>
+    <content type="html"><![CDATA[<p>In the software development vernacular the term <acronym title="You
+aren't gonna need it">YAGNI</acronym> is often used as a device to put
+down attempts at prematurely adding functionality - things which are
+only speculatively required. This makes sense given that is basically
+the <a href="http://www.xprogramming.com/Practices/PracNotNeed.html" title="You're NOT gonna need it">definition</a> that <a href="http://www.xprogramming.com/" title="XProgramming : an Agile Software Development Resource">Ron Jeffries</a> and our <acronym
+title="eXtreme Programming">XP</acronym> forefathers came up with so
+long ago.</p>
+
+<h3>Is that the whole story?</h3>
+
+<p><a href="http://www.flickr.com/photos/z6p6tist6/501709581/" title="photo via: http://www.flickr.com/photos/z6p6tist6/501709581/"><img class="right" src="http://stevenharman.heroku.com/images/posts/stop-sign.jpg"></a> In short, I don&#8217;t think
+so.</p>
+
+<p>I&#8217;ve long believed there was more to YAGNI than what had been
+canonically defined and was commonly understood. However, until recently
+I was never able to put my finger on what was missing.</p>
+
+<p>While listening to an episode of <a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;printTitle=Industry_Misinterpretations_164:_Going_for_the_Longball&amp;entry=3436948975" title="Industry Misinterpretations 164: Going for the Longball">Industry Misinterpretations</a> I
+heard <a href="http://www.threeriversinstitute.org/Kent%20Beck.htm" title="Kent Beck @ Three Rivers Institute">Kent Beck</a> make a subtle point about the need to make progress
+being more important than the completeness of the thing you&#8217;re building
+at the point you&#8217;re building it.  Lending from this Kent&#8217;s insight and
+mixing in much of my own experience, I realized YAGNI is not about
+delaying building things until you need them; it&#8217;s that gaining real
+experience in the problem domain, while making concrete progress, is
+more important than trying to achieve a complete solution <em>right now</em>.</p>
+
+<p>Do you think it&#8217;s too early to update the <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it" title="You ain't gonna need it">Wikipedia article</a>?</p>
 ]]></content>
   </entry>
   
