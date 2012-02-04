@@ -27,6 +27,8 @@ The workflow that caused those merges was as follows:
 By default `git pull` will fetch any new commits from the remote, and
 then merge any local changes in, resulting in the merge bubbles.
 
+<!-- more -->
+
 <h3>A better approach</h3>
 
 I typically use the same workflow as above with one tweak. Rather than `git

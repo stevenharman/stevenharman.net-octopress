@@ -165,52 +165,12 @@ those merge bubbles in there? <em>Eww!</em></p>
 <p>By default <code>git pull</code> will fetch any new commits from the remote, and
 then merge any local changes in, resulting in the merge bubbles.</p>
 
-<h3>A better approach</h3>
-
-
-<p>I typically use the same workflow as above with one tweak. Rather than <code>git
-pull</code> I use <code>git pull --rebase</code> which will fetch the remote commits,
-and rebase your commits on top of the new commits from the remote. This is the
-&acirc;&euro;&oelig;re-writing&acirc;&euro; of history folks often talk about.</p>
-
-<h3>Make it better, automatically!</h3>
-
-
-<p>You can tell git to use rebase, rather than merge, in one of two ways, depending on
-your situation.</p>
-
-<figure class='code'><figcaption><span>Force all new branches to automatically use rebase  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git config branch.autosetuprebase always
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>You can add the <code>--global</code> switch to have all future branches, in all
-repositories on this machine, behave this way.</p>
-
-<figure class='code'><figcaption><span>Force existing branches to use rebase.  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git config branch.*branch-name*.rebase <span class="nb">true</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<h3>Get more info</h3>
-
-
-<p>Be sure to check out the <a title="git-config Manual Page" href=
-"http://www.kernel.org/pub/software/scm/git/docs/git-config.html" rel="external">git
-man pages</a> for more info on what those options mean and when you may or may not want
-to use them.</p>
-
-<p>You might also want to check out my <a title="Git Workflows" href=
-"https://github.com/stevenharman/git-workflows" rel="external">Git Workflows repository
-on The GitHubs</a> where you can find a Keynote presentation (or PDF in the Downloads)
-explaining <code>git rebase</code> vs. <code>git merge</code> Complete with
-pictures!</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/git-pull-with-automatic-rebase/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -311,7 +271,7 @@ is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#82
 find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
 title="The Home Row and Touch Typing"
 href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
-Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
+Row</a>. The more I use Vim the more angry I get at the <code>Caps Lock</code> key.</p>
 
 <h3>Making Caps Lock Useful, on The Mac</h3>
 
@@ -325,28 +285,12 @@ Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
 Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
 via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
 
-<h3>Making Caps Lock Useful, on The Windows</h3>
-
-<p>To my knowledge, there is nothing baked into the <acronym
-title="Operating System">OS</acronym> that makes this easy, but there
-are a handful of utilities that will let you remap most keys. I opted
-for the Lo-Fi route - hacking the registry to remap <code>Caps Lock</code> to
-<code>Ctrl</code>.</p>
-
-<div><script src='https://gist.github.com/788631.js?file='></script>
-<noscript><pre><code>REGEDIT4
- [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
- &quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
-</code></pre></noscript></div>
-
-
-<p>To use it, just download/save the raw <code>.reg</code> file to your Windows box,
-and the run (double-click, whatever) it.</p>
-
-<p>And there you have it. Good bye, annoying <code>Caps Lock</code>. Hello, useful
-stuff!</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/caps-lock-is-dumb-make-it-useful/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -450,28 +394,14 @@ the human experience when designing for, well, humans.</p>
 <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 
-<p>However, thanks to projects like <a title="Processing" href="http://processing.org/" rel="external">Processing</a> there may be a change on the horizon. Using tools of their ilk we can build exciting new ways to <em>see</em> and consume the vast seas of data we’re drowning in. By visualizing the data we are able to discover new and interesting patterns, behaviors, and insights.</p>
-
-<h3>An example</h3>
 
 
-<p>The video to the right is an example of one such visualization I produced using <a title="Gource - software version control visualization" href="http://code.google.com/p/gource/" rel="external">Gource</a> to analyze the Git repository of one of the product’s we’ve build at <a title="VersionOne: Simplifying Software Delivery" href="http://versionone.com/" rel="external">VersionOne</a>.</p>
-
-<p>For reference, each branch (line) is a different directory containing files. Each leaf (dot) is a file, and different file types (Ruby, JavaScript, C#, etc.) have different colors. Each contributor is represented by their name and Gravatar.  The colored lines that occasionally connect a contributor to a file are color coded to represent adds (green), changes (orange) and deletes (red).</p>
-
-<p>A few interesting things this visualization leads me to think about are</p>
-
-<ul>
-<li>how much churn happens in various parts of the code base?</li>
-<li>where are we spending time?</li>
-<li>is new-feature work well isolated? (perhaps an indicator of composition)</li>
-<li>are there <em>specialists</em> within the team?</li>
-</ul>
-
-
-<p>Do any interesting things pop to mind when you watch the video? Let me know by leaving a comment.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/gain-new-insights-by-visualizing-what-youve-already-got/">Read on &rarr;</a>
+    </footer>
   
 
 

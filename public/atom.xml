@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T12:29:33-05:00</updated>
+  <updated>2012-02-04T12:42:26-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -62,6 +62,11 @@ those merge bubbles in there? <em>Eww!</em></p>
 
 <p>By default <code>git pull</code> will fetch any new commits from the remote, and
 then merge any local changes in, resulting in the merge bubbles.</p>
+
+<!-- more -->
+
+
+
 
 <h3>A better approach</h3>
 
@@ -155,7 +160,7 @@ is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#82
 find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
 title="The Home Row and Touch Typing"
 href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
-Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
+Row</a>. The more I use Vim the more angry I get at the <code>Caps Lock</code> key.</p>
 
 <h3>Making Caps Lock Useful, on The Mac</h3>
 
@@ -168,6 +173,9 @@ title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
 Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
 Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
 via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
+
+<!-- more -->
+
 
 <h3>Making Caps Lock Useful, on The Windows</h3>
 
@@ -238,6 +246,11 @@ the human experience when designing for, well, humans.</p>
 <p>For years the primary way we’ve looked at the activity or interaction within various source control management systems is via log files. Yep… plain, text-laden, indecipherable logs chock full of entries each a similitude of it’s predecessors.</p>
 
 <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+
+
+
+<!-- more -->
 
 
 <p>However, thanks to projects like <a title="Processing" href="http://processing.org/" rel="external">Processing</a> there may be a change on the horizon. Using tools of their ilk we can build exciting new ways to <em>see</em> and consume the vast seas of data we’re drowning in. By visualizing the data we are able to discover new and interesting patterns, behaviors, and insights.</p>

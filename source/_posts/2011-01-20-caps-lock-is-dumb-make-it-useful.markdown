@@ -10,7 +10,7 @@ is some archaic reason it exists, but the truth is I don't care. I don't
 find it useful and am annoyed that it's taking up valuable room on my <a
 title="The Home Row and Touch Typing"
 href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
-Row</a>. The more I use Vim the more angry I get at the Caps Lock key.
+Row</a>. The more I use Vim the more angry I get at the `Caps Lock` key.
 
 ### Making Caps Lock Useful, on The Mac
 
@@ -23,6 +23,8 @@ title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
 Vim mode) where I'd much prefer to have `Ctrl` on my Home Row.
 Remapping `Caps Lock` to `Ctrl` is trivial on OS X; it's baked in
 via *System Preferences > Keyboard Preferences > Modifier Keys*.
+
+<!-- more -->
 
 ### Making Caps Lock Useful, on The Windows
 
