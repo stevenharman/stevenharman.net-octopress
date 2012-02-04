@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T12:42:26-05:00</updated>
+  <updated>2012-02-04T12:50:17-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -228,6 +228,29 @@ cares to engage the application, when he cares to engage it.</p>
 <p>Whether its fuzzy dates and time, or using avatars instead of user
 names, or any number of other examples, the point is to <em>think</em> about
 the human experience when designing for, well, humans.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Handful of Git Workflows for the Agilist]]></title>
+    <link href="http://stevenharman.heroku.com/a-handful-of-git-workflows-for-the-agilist/"/>
+    <updated>2010-08-12T12:44:00-04:00</updated>
+    <id>http://stevenharman.heroku.com/a-handful-of-git-workflows-for-the-agilist</id>
+    <content type="html"><![CDATA[<p>A few months back I gave <a href="http://www.thepathtoagility.org/" title="the path to agility conference">little talk</a> on the darling <acronym
+title="Source Control Management">SCM</acronym> tool of the Open Source
+world, <a href="http://git-scm.com/" title="Git: the fast version control system">Git</a>. After the conference, the organizers asked for a copy
+of the presentation materials I&#8217;d used - something I usually find little
+value in as the content of a discussion is far more than just the
+collateral used.</p>
+
+<p>At any rate, I obliged, sent off a PDF, and have <a href="http://github.com/stevenharman/git-workflows" title="a handful of Git workflows for the agilist">opened the talk up</a>
+for others to use and improve. You can find the source (Keynote
+presentation, images, etc.) on GitHub. Fork and modify the talk to your
+heart&#8217;s content. ♡</p>
+
+<p>Oh, and the <a href="http://github.com/stevenharman/git-workflows/downloads" title="download the PDF version">PDF is there</a> too.</p>
+
+<p>Enjoy!</p>
 ]]></content>
   </entry>
   
