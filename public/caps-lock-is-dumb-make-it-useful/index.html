@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Gain New Insights by Visualizing What You’ve Already Got - Steven Harman</title>
+  <title>Caps Lock is Dumb; Make it Useful - Steven Harman</title>
   <meta name="author" content="Steven Harman">
 
   
-  <meta name="description" content="I don’t know about you, but I like pretty things. Things that engage me. Shiny things. I enjoy seeing the same old thing in new and interesting ways &hellip;">
+  <meta name="description" content="I&#8217;ve long thought that Caps Lock was quite dumb. Yes, I&#8217;m sure there
+is some archaic reason it exists, but the truth is I don&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://stevenharman.heroku.com/gain-new-insights-by-visualizing-what-youve-already-got">
+  <link rel="canonical" href="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Gain New Insights by Visualizing What You’ve Already Got</h1>
+      <h1 class="entry-title">Caps Lock Is Dumb; Make It Useful</h1>
     
     
       <p class="meta">
@@ -83,45 +84,52 @@
   
 
 
-<time datetime="2010-02-24T22:32:00-05:00" pubdate data-updated="true">Feb 24<span>th</span>, 2010</time>
+<time datetime="2011-01-20T12:00:00-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I don’t know about you, but I like pretty things. Things that engage me. Shiny things. I enjoy seeing <em>the same old thing</em> in new and interesting ways. I suppose I’m just a visual kinda’ guy.</p>
+<div class="entry-content"><p>I&#8217;ve long thought that <code>Caps Lock</code> was quite dumb. Yes, I&#8217;m sure there
+is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#8217;t
+find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
+title="The Home Row and Touch Typing"
+href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
+Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
 
-<p>Unfortunately, the desire for visual representation is at odds with the high bandwidth flood of information we’re subjected to these days. Even if we manage to trim the overwhelming flood of information down to a laser-focused stream, it still takes an immense amount of effort to make sense of it.</p>
+<h3>Making Caps Lock Useful, on The Mac</h3>
 
-<h3>For example</h3>
+<p>I long ago remapped <code>Caps Lock</code> to <code>Esc</code> on my Mac - which worked
+great for <a title="the missing editor" href="http://macromates.com/"
+rel="external">TextMate</a>. However, these days I spend the majority of
+my time in <a title="Vim for the Mac"
+href="http://code.google.com/p/macvim/" rel="external">Vim</a> or <a
+title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
+Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
+Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
+via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
 
+<h3>Making Caps Lock Useful, on The Windows</h3>
 
-<p>For years the primary way we’ve looked at the activity or interaction within various source control management systems is via log files. Yep… plain, text-laden, indecipherable logs chock full of entries each a similitude of it’s predecessors.</p>
+<p>To my knowledge, there is nothing baked into the <acronym
+title="Operating System">OS</acronym> that makes this easy, but there
+are a handful of utilities that will let you remap most keys. I opted
+for the Lo-Fi route - hacking the registry to remap <code>Caps Lock</code> to
+<code>Ctrl</code>.</p>
 
-<object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-
-
-<p>However, thanks to projects like <a title="Processing" href="http://processing.org/" rel="external">Processing</a> there may be a change on the horizon. Using tools of their ilk we can build exciting new ways to <em>see</em> and consume the vast seas of data we’re drowning in. By visualizing the data we are able to discover new and interesting patterns, behaviors, and insights.</p>
-
-<h3>An example</h3>
-
-
-<p>The video to the right is an example of one such visualization I produced using <a title="Gource - software version control visualization" href="http://code.google.com/p/gource/" rel="external">Gource</a> to analyze the Git repository of one of the product’s we’ve build at <a title="VersionOne: Simplifying Software Delivery" href="http://versionone.com/" rel="external">VersionOne</a>.</p>
-
-<p>For reference, each branch (line) is a different directory containing files. Each leaf (dot) is a file, and different file types (Ruby, JavaScript, C#, etc.) have different colors. Each contributor is represented by their name and Gravatar.  The colored lines that occasionally connect a contributor to a file are color coded to represent adds (green), changes (orange) and deletes (red).</p>
-
-<p>A few interesting things this visualization leads me to think about are</p>
-
-<ul>
-<li>how much churn happens in various parts of the code base?</li>
-<li>where are we spending time?</li>
-<li>is new-feature work well isolated? (perhaps an indicator of composition)</li>
-<li>are there <em>specialists</em> within the team?</li>
-</ul>
+<div><script src='https://gist.github.com/788631.js?file='></script>
+<noscript><pre><code>REGEDIT4
+ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+ &quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+</code></pre></noscript></div>
 
 
-<p>Do any interesting things pop to mind when you watch the video? Let me know by leaving a comment.</p>
+<p>To use it, just download/save the raw <code>.reg</code> file to your Windows box,
+and the run (double-click, whatever) it.</p>
+
+<p>And there you have it. Good bye, annoying <code>Caps Lock</code>. Hello, useful
+stuff!</p>
 </div>
 
 
@@ -144,7 +152,7 @@
   
 
 
-<time datetime="2010-02-24T22:32:00-05:00" pubdate data-updated="true">Feb 24<span>th</span>, 2010</time>
+<time datetime="2011-01-20T12:00:00-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
       
 
 
@@ -152,7 +160,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/gain-new-insights-by-visualizing-what-youve-already-got/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/gain-new-insights-by-visualizing-what-youve-already-got/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/" >Tweet</a>
   
   
   
@@ -161,8 +169,10 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/gain-new-insights-by-visualizing-what-youve-already-got/" title="Previous Post: Gain New Insights by Visualizing What You’ve Already Got">&laquo; Gain New Insights by Visualizing What You’ve Already Got</a>
       
-        <a class="basic-alignment right" href="/caps-lock-is-dumb-make-it-useful/" title="next Post: Caps Lock is Dumb; Make it Useful">Caps Lock is Dumb; Make it Useful &raquo;</a>
+      
+        <a class="basic-alignment right" href="/an-io-language-vim-plugin/" title="next Post: An Io Language Vim Plugin">An Io Language Vim Plugin &raquo;</a>
       
     </p>
   </footer>

@@ -283,6 +283,80 @@ out into a standalone plugin.</p>
       
   <header>
     
+      <h1 class="entry-title"><a href="/caps-lock-is-dumb-make-it-useful/">Caps Lock Is Dumb; Make It Useful</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-20T12:00:00-05:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve long thought that <code>Caps Lock</code> was quite dumb. Yes, I&#8217;m sure there
+is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#8217;t
+find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
+title="The Home Row and Touch Typing"
+href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
+Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
+
+<h3>Making Caps Lock Useful, on The Mac</h3>
+
+<p>I long ago remapped <code>Caps Lock</code> to <code>Esc</code> on my Mac - which worked
+great for <a title="the missing editor" href="http://macromates.com/"
+rel="external">TextMate</a>. However, these days I spend the majority of
+my time in <a title="Vim for the Mac"
+href="http://code.google.com/p/macvim/" rel="external">Vim</a> or <a
+title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
+Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
+Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
+via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
+
+<h3>Making Caps Lock Useful, on The Windows</h3>
+
+<p>To my knowledge, there is nothing baked into the <acronym
+title="Operating System">OS</acronym> that makes this easy, but there
+are a handful of utilities that will let you remap most keys. I opted
+for the Lo-Fi route - hacking the registry to remap <code>Caps Lock</code> to
+<code>Ctrl</code>.</p>
+
+<div><script src='https://gist.github.com/788631.js?file='></script>
+<noscript><pre><code>REGEDIT4
+ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+ &quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+</code></pre></noscript></div>
+
+
+<p>To use it, just download/save the raw <code>.reg</code> file to your Windows box,
+and the run (double-click, whatever) it.</p>
+
+<p>And there you have it. Good bye, annoying <code>Caps Lock</code>. Hello, useful
+stuff!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/gain-new-insights-by-visualizing-what-youve-already-got/">Gain New Insights by Visualizing What You’ve Already Got</a></h1>
     
     
@@ -367,6 +441,10 @@ out into a standalone plugin.</p>
     
       <li class="post">
         <a href="/an-io-language-vim-plugin/">An Io Language Vim Plugin</a>
+      </li>
+    
+      <li class="post">
+        <a href="/caps-lock-is-dumb-make-it-useful/">Caps Lock is Dumb; Make it Useful</a>
       </li>
     
       <li class="post">

@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-02T17:15:13-05:00</updated>
+  <updated>2012-02-04T12:14:47-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -142,6 +142,53 @@ resulting vim-io plugin is currently embedded <a title="vim-io: Io, for Vim!" hr
 out into a standalone plugin.</p>
 
 <p>Grab it, enjoy it, fork and improve it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Caps Lock is Dumb; Make it Useful]]></title>
+    <link href="http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful/"/>
+    <updated>2011-01-20T12:00:00-05:00</updated>
+    <id>http://stevenharman.heroku.com/caps-lock-is-dumb-make-it-useful</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve long thought that <code>Caps Lock</code> was quite dumb. Yes, I&#8217;m sure there
+is some archaic reason it exists, but the truth is I don&#8217;t care. I don&#8217;t
+find it useful and am annoyed that it&#8217;s taking up valuable room on my <a
+title="The Home Row and Touch Typing"
+href="http://en.wikipedia.org/wiki/Touch_typing" rel="external">Home
+Row</a>. The more I use Vim the more angry I get at the Caps Lock key.</p>
+
+<h3>Making Caps Lock Useful, on The Mac</h3>
+
+<p>I long ago remapped <code>Caps Lock</code> to <code>Esc</code> on my Mac - which worked
+great for <a title="the missing editor" href="http://macromates.com/"
+rel="external">TextMate</a>. However, these days I spend the majority of
+my time in <a title="Vim for the Mac"
+href="http://code.google.com/p/macvim/" rel="external">Vim</a> or <a
+title="Zeee Shell" href="http://www.zsh.org/" rel="external">Zsh</a> (in
+Vim mode) where I&#8217;d much prefer to have <code>Ctrl</code> on my Home Row.
+Remapping <code>Caps Lock</code> to <code>Ctrl</code> is trivial on OS X; it&#8217;s baked in
+via <em>System Preferences > Keyboard Preferences > Modifier Keys</em>.</p>
+
+<h3>Making Caps Lock Useful, on The Windows</h3>
+
+<p>To my knowledge, there is nothing baked into the <acronym
+title="Operating System">OS</acronym> that makes this easy, but there
+are a handful of utilities that will let you remap most keys. I opted
+for the Lo-Fi route - hacking the registry to remap <code>Caps Lock</code> to
+<code>Ctrl</code>.</p>
+
+<div><script src='https://gist.github.com/788631.js?file='></script>
+<noscript><pre><code>REGEDIT4
+ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+ &quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+</code></pre></noscript></div>
+
+
+<p>To use it, just download/save the raw <code>.reg</code> file to your Windows box,
+and the run (double-click, whatever) it.</p>
+
+<p>And there you have it. Good bye, annoying <code>Caps Lock</code>. Hello, useful
+stuff!</p>
 ]]></content>
   </entry>
   
