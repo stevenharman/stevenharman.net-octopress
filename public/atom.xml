@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Harman]]></title>
   <link href="http://stevenharman.heroku.com/atom.xml" rel="self"/>
   <link href="http://stevenharman.heroku.com/"/>
-  <updated>2012-02-04T12:56:00-05:00</updated>
+  <updated>2012-02-04T13:30:34-05:00</updated>
   <id>http://stevenharman.heroku.com/</id>
   <author>
     <name><![CDATA[Steven Harman]]></name>
@@ -334,6 +334,49 @@ it!</strong></li>
 
 
 <p>Do any interesting things pop to mind when you watch the video? Let me know by leaving a comment.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Don't We Ask Why?]]></title>
+    <link href="http://stevenharman.heroku.com/why-dont-we-ask-why/"/>
+    <updated>2010-02-18T12:58:00-05:00</updated>
+    <id>http://stevenharman.heroku.com/why-dont-we-ask-why</id>
+    <content type="html"><![CDATA[<p>Have you ever thought about just how much time we software folk spend
+focused on the technologies we&#8217;re using, on implementation minutia,
+and on all of the shiny new <em>solutions</em> we <em>should</em> be using?</p>
+
+<p><a href="http://www.flickr.com/photos/marcobellucci/3534516458/" title="photo via: http://www.flickr.com/photos/marcobellucci/3534516458/"><img class="right" src="http://stevenharman.heroku.com/images/posts/question-mark.jpg"></a></p>
+
+<p>Now contrast that with how often we stop to think about the <strong>Whys</strong>?</p>
+
+<p>Why are we being asked to solve <em>fizz-buzz-thing</em>; do we understand the
+motivation and context behind the problem, or are we fixated on how
+we&#8217;ll build the solution? Are we asking why a problem occurred, or are
+we merely focused on how we fixed it, this time?</p>
+
+<h3>Why don&#8217;t we ask &#8220;Why?&#8221;</h3>
+
+<p>Frankly, because we&#8217;d rather spend our time in the comfortable arena
+of <strong>how</strong> than venture into the sometimes uneasy realm of <strong>why</strong>.</p>
+
+<blockquote><p>She didn&#8217;t want to know how a thing was done, but why. That can be<br/>embarrassing. You ask *Why* to a lot of things and you wind up<br/>very unhappy indeed, if you keep at it.<br/>- Captain Beatty</p><footer><strong>Ray Bradburry</strong> <cite><a href='http://www.amazon.com/dp/0345342968/?tag=stevenharman-20'>Fahrenheit 451</a></cite></footer></blockquote>
+
+
+
+
+<!-- more -->
+
+
+<p>Asking why often forces us to face the truth, and that truth can be
+uncomfortable. We need to have the courage to face those truths and
+coninue to ask why; we must have the <a href="http://en.wikipedia.org/wiki/Extreme_Programming#Values" title="XP Values - Courage">courage</a> to pop the why stack.</p>
+
+<p>It&#8217;s only by asking why that we&#8217;ll gain the understanding, insight,
+and context necessary to effectively solve the problems we&#8217;re faced
+with, to grow, and to improve.</p>
+
+<p>So, <em>why</em> are you reading this post? :)</p>
 ]]></content>
   </entry>
   
