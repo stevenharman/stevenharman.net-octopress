@@ -21,8 +21,8 @@ objects. My tests got faster, but they were still painful.
 ### A realization
 
 In 2008 I was talking with [Corey Haines][corey] about test pain, object
-oriented design, and "listening" to the former to influence the latter. [Scott
-Bellware][bellware] also contributed much insight, forcing me to really
+oriented design, and "listening" to the former to influence the latter.
+[Scott Bellware][bellware] also contributed much insight, forcing me to really
 think about what I hoped to gain from writing tests.
 
 Those conversations help to crystallized it for me: the root cause of the pain
@@ -30,8 +30,8 @@ was not the tests, but the design of the code under test. I had been doing
 test-_first development_, not test-**driven design**.
 
 In the years since I've honed my technique for driving design by listening to
-tests and I continue to seek out the ideas and experiences of other [fast test
-fanatics][das].
+tests and I continue to seek out the ideas and experiences of other
+[fast test fanatics][das].
 
 The Ruby and Rails communities have accelerated this path for many. I would
 say it's not uncommon for new folks to get started where I was in 2005 or
