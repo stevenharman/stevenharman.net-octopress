@@ -9,7 +9,8 @@
   <meta name="author" content="Steven Harman">
 
   
-  <meta name="description" content="I’ve created visualizations for Git repositories before – the one tracked a product from its first commit through launch. And while I still think &hellip;">
+  <meta name="description" content="When I started writing tests, around 2005, using JUnit, I was stoked just to
+have the tests. When I started writing tests first, around 2006, I was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +65,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/from-testing-to-test-first-to-test-driven/">From Testing to Test First to Test Driven</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-08T11:16:00-04:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When I started writing tests, around 2005, using JUnit, I was stoked just to
+have the tests.</p>
+
+<p>When I started writing tests first, around 2006, I was excited because I was
+&#8220;doing the TDD.&#8221;</p>
+
+<p>A couple of years later I found that writing tests was getting really painful.
+Painful because they were so damn hard to set up, and painful because I had to
+wait minutes for the test suite to run. I reacted to that pain and started to
+change my tests. My tests got faster, but they were still painful.</p>
+
+<p>At some point I realized the root cause of the pain was not the tests
+themselves, but the design of the code under test. I had been doing Test-first
+development, not Test-driven design. This all became clear to me in 2008, while
+talking with <a href="http://coreyhaines.com/" title="The Software Journeyman">Corey Haines</a> about test pain, object oriented design, and
+&#8220;listening&#8221; to the former to influence the latter.</p>
+
+<p>Over the past few years my ideas one how to drive design by listening to tests
+has solidified and been reaffirmed by talking and listening to
+other <a href="https://www.destroyallsoftware.com/screencasts" title="Screencasts for Serious Developers">fast test fanatics</a>.</p>
+
+<p>Rails has helped to jump-start this process for many; I see a lot of folks in
+the Rails community get started where I was in 2005 or 2006, and many are
+starting to feel some pain. The next step is to become more aware of that pain;
+lower your pain threshold and then make it stop hurting!</p>
+
+<p>It was by no means an overnight thing. It literally took years of work for me
+to figure this out, but I hope by putting my experience out there, yours can be
+better, faster, MOAR!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -584,68 +649,6 @@ of <strong>how</strong> than venture into the sometimes uneasy realm of <strong>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/yagni-ainrsquot-what-you-thing-it-is/">YAGNI Ain&#8217;t What You Thing It Is</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-07T13:33:00-05:00" pubdate data-updated="true">Jan 7<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In the software development vernacular the term <acronym title="You
-aren't gonna need it">YAGNI</acronym> is often used as a device to put
-down attempts at prematurely adding functionality - things which are
-only speculatively required. This makes sense given that is basically
-the <a href="http://www.xprogramming.com/Practices/PracNotNeed.html" title="You're NOT gonna need it">definition</a> that <a href="http://www.xprogramming.com/" title="XProgramming : an Agile Software Development Resource">Ron Jeffries</a> and our <acronym
-title="eXtreme Programming">XP</acronym> forefathers came up with so
-long ago.</p>
-
-<h3>Is that the whole story?</h3>
-
-<p><a href="http://www.flickr.com/photos/z6p6tist6/501709581/" title="photo via: http://www.flickr.com/photos/z6p6tist6/501709581/"><img class="right" src="/images/posts/stop-sign.jpg"></a> In short, I don&#8217;t think
-so.</p>
-
-<p>I&#8217;ve long believed there was more to YAGNI than what had been
-canonically defined and was commonly understood. However, until recently
-I was never able to put my finger on what was missing.</p>
-
-<p>While listening to an episode of <a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;printTitle=Industry_Misinterpretations_164:_Going_for_the_Longball&amp;entry=3436948975" title="Industry Misinterpretations 164: Going for the Longball">Industry Misinterpretations</a> I
-heard <a href="http://www.threeriversinstitute.org/Kent%20Beck.htm" title="Kent Beck @ Three Rivers Institute">Kent Beck</a> make a subtle point about the need to make progress
-being more important than the completeness of the thing you&#8217;re building
-at the point you&#8217;re building it.  Lending from this Kent&#8217;s insight and
-mixing in much of my own experience, I realized YAGNI is not about
-delaying building things until you need them; it&#8217;s that gaining real
-experience in the problem domain, while making concrete progress, is
-more important than trying to achieve a complete solution <em>right now</em>.</p>
-
-<p>Do you think it&#8217;s too early to update the <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it" title="You ain't gonna need it">Wikipedia article</a>?</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/2/">&larr; Older</a>
@@ -661,6 +664,10 @@ more important than trying to achieve a complete solution <em>right now</em>.</p
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/from-testing-to-test-first-to-test-driven/">From Testing to Test First to Test Driven</a>
+      </li>
+    
+      <li class="post">
         <a href="/another-git-repository-visualization-just-for-fun/">Another Git Repository Visualization, Just for Fun.</a>
       </li>
     
@@ -674,10 +681,6 @@ more important than trying to achieve a complete solution <em>right now</em>.</p
     
       <li class="post">
         <a href="/caps-lock-is-dumb-make-it-useful/">Caps Lock is Dumb; Make it Useful</a>
-      </li>
-    
-      <li class="post">
-        <a href="/a-first-step-to-better-user-experience-thinking-like-a-human/">A First Step to Better User Experience: Thinking Like a Human</a>
       </li>
     
   </ul>

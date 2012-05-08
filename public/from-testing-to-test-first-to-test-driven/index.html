@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Why Don't We Ask Why? - Steven Harman</title>
+  <title>From Testing to Test First to Test Driven - Steven Harman</title>
   <meta name="author" content="Steven Harman">
 
   
-  <meta name="description" content="Have you ever thought about just how much time we software folk spend
-focused on the technologies we&#8217;re using, on implementation minutia,
-and &hellip;">
+  <meta name="description" content="When I started writing tests, around 2005, using JUnit, I was stoked just to
+have the tests. When I started writing tests first, around 2006, I was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ and &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://stevenharman.heroku.com/why-dont-we-ask-why">
+  <link rel="canonical" href="http://stevenharman.heroku.com/from-testing-to-test-first-to-test-driven">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +68,7 @@ and &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Why Don't We Ask Why?</h1>
+      <h1 class="entry-title">From Testing to Test First to Test Driven</h1>
     
     
       <p class="meta">
@@ -85,48 +84,42 @@ and &hellip;">
   
 
 
-<time datetime="2010-02-18T12:58:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2010</time>
+<time datetime="2012-05-08T11:16:00-04:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Have you ever thought about just how much time we software folk spend
-focused on the technologies we&#8217;re using, on implementation minutia,
-and on all of the shiny new <em>solutions</em> we <em>should</em> be using?</p>
+<div class="entry-content"><p>When I started writing tests, around 2005, using JUnit, I was stoked just to
+have the tests.</p>
 
-<p><a href="http://www.flickr.com/photos/marcobellucci/3534516458/" title="photo via: http://www.flickr.com/photos/marcobellucci/3534516458/"><img class="right" src="/images/posts/question-mark.jpg"></a></p>
+<p>When I started writing tests first, around 2006, I was excited because I was
+&#8220;doing the TDD.&#8221;</p>
 
-<p>Now contrast that with how often we stop to think about the <strong>Whys</strong>?</p>
+<p>A couple of years later I found that writing tests was getting really painful.
+Painful because they were so damn hard to set up, and painful because I had to
+wait minutes for the test suite to run. I reacted to that pain and started to
+change my tests. My tests got faster, but they were still painful.</p>
 
-<p>Why are we being asked to solve <em>fizz-buzz-thing</em>; do we understand the
-motivation and context behind the problem, or are we fixated on how
-we&#8217;ll build the solution? Are we asking why a problem occurred, or are
-we merely focused on how we fixed it, this time?</p>
+<p>At some point I realized the root cause of the pain was not the tests
+themselves, but the design of the code under test. I had been doing Test-first
+development, not Test-driven design. This all became clear to me in 2008, while
+talking with <a href="http://coreyhaines.com/" title="The Software Journeyman">Corey Haines</a> about test pain, object oriented design, and
+&#8220;listening&#8221; to the former to influence the latter.</p>
 
-<h3>Why don&#8217;t we ask &#8220;Why?&#8221;</h3>
+<p>Over the past few years my ideas one how to drive design by listening to tests
+has solidified and been reaffirmed by talking and listening to
+other <a href="https://www.destroyallsoftware.com/screencasts" title="Screencasts for Serious Developers">fast test fanatics</a>.</p>
 
-<p>Frankly, because we&#8217;d rather spend our time in the comfortable arena
-of <strong>how</strong> than venture into the sometimes uneasy realm of <strong>why</strong>.</p>
+<p>Rails has helped to jump-start this process for many; I see a lot of folks in
+the Rails community get started where I was in 2005 or 2006, and many are
+starting to feel some pain. The next step is to become more aware of that pain;
+lower your pain threshold and then make it stop hurting!</p>
 
-<blockquote><p>She didn&#8217;t want to know how a thing was done, but why. That can be<br/>embarrassing. You ask *Why* to a lot of things and you wind up<br/>very unhappy indeed, if you keep at it.<br/>- Captain Beatty</p><footer><strong>Ray Bradburry</strong> <cite><a href='http://www.amazon.com/dp/0345342968/?tag=stevenharman-20'>Fahrenheit 451</a></cite></footer></blockquote>
-
-
-
-
-<!-- more -->
-
-
-<p>Asking why often forces us to face the truth, and that truth can be
-uncomfortable. We need to have the courage to face those truths and
-coninue to ask why; we must have the <a href="http://en.wikipedia.org/wiki/Extreme_Programming#Values" title="XP Values - Courage">courage</a> to pop the why stack.</p>
-
-<p>It&#8217;s only by asking why that we&#8217;ll gain the understanding, insight,
-and context necessary to effectively solve the problems we&#8217;re faced
-with, to grow, and to improve.</p>
-
-<p>So, <em>why</em> are you reading this post? :)</p>
+<p>It was by no means an overnight thing. It literally took years of work for me
+to figure this out, but I hope by putting my experience out there, yours can be
+better, faster, MOAR!</p>
 </div>
 
 
@@ -149,7 +142,7 @@ with, to grow, and to improve.</p>
   
 
 
-<time datetime="2010-02-18T12:58:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2010</time>
+<time datetime="2012-05-08T11:16:00-04:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time>
       
 
 
@@ -157,7 +150,7 @@ with, to grow, and to improve.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/why-dont-we-ask-why/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/why-dont-we-ask-why/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenharman.heroku.com/from-testing-to-test-first-to-test-driven/" data-via="stevenharman" data-counturl="http://stevenharman.heroku.com/from-testing-to-test-first-to-test-driven/" >Tweet</a>
   
   
   
@@ -166,10 +159,8 @@ with, to grow, and to improve.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/yagni-ainrsquot-what-you-thing-it-is/" title="Previous Post: YAGNI Ain't What You Thing It Is">&laquo; YAGNI Ain't What You Thing It Is</a>
+        <a class="basic-alignment left" href="/another-git-repository-visualization-just-for-fun/" title="Previous Post: Another Git Repository Visualization, Just for Fun.">&laquo; Another Git Repository Visualization, Just for Fun.</a>
       
-      
-        <a class="basic-alignment right" href="/gain-new-insights-by-visualizing-what-youve-already-got/" title="Next Post: Gain New Insights by Visualizing What You’ve Already Got">Gain New Insights by Visualizing What You’ve Already Got &raquo;</a>
       
     </p>
   </footer>
