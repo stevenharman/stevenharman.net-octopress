@@ -18,5 +18,6 @@ gem 'stringex'
 group :development do
   gem 'rb-fsevent'
   gem 'heroku'
+  gem 'shotgun'
 end
 
