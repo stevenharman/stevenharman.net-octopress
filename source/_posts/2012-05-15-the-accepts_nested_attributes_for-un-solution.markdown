@@ -27,7 +27,7 @@ merry go round.
 
 > FFFUUU, this is too complicated! There must be an easier, more Rails-y way.
 
-> I know, Conversations can `accepts_attributes_for :messages`. Brilliant!
+> I know, Conversations can `accepts_nested_attributes_for :messages`. Brilliant!
 
 > _... hours later ..._
 
