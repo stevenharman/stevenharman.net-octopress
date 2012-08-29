@@ -14,8 +14,8 @@ use Rack::Rewrite do
                 'yagni-ainrsquot-what-you-think-it-is' => 'yagni-aint-what-you-think-it-is',
                 'omg-better-rake-for-.net' => 'omg-better-rake-for-dot-net' }
 
-  r301 %r{.*}, 'http://www.stevenharman.net$&', :if => Proc.new { |rack_env|
-    rack_env['SERVER_NAME'] != 'www.stevenharman.net' && ENV['RACK_ENV'] == 'production'
+  r301 %r{.*}, 'http://stevenharman.net$&', :if => Proc.new { |rack_env|
+    rack_env['SERVER_NAME'] != 'stevenharman.net' && ENV['RACK_ENV'] == 'production'
   }
 
   r301 %r{^/blog/default\.aspx$}i, '/'
