@@ -1,11 +1,31 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+html {
+  background: $page-bg image-url('argyle.png') top left;
+}
+
+header[role='banner'] {
+  h1 { font-family: 'Coda', cursive; }
+  h2 { font-family: 'Averia Libre', cursive; }
+}
 
 header {
-  h1, h2 { display: inline-block; }
+  h1, h2 {
+    display: inline-block;
+  }
   h2 { text-transform: lowercase; }
 }
 
 ul, ol {
   margin-left: 1.5em;
+}
+
+.entry-title {
+
+}
+
+.heading,
+  body > header h1,
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Coda', cursive
 }
