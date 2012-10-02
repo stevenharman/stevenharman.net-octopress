@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Bag of Methods Module and Grep-driven Development"
+date: 2012-10-02 10:34
+comments: true
+categories:
+---
+Always looking for more concise ways to express ideas, I'd like to present two
+terms for your consideration.
+
+<dl>
+  <dt>BOMM <em>|bäm|</em> <i>(abbreviation)</i></dt>
+  <dd>Bag of Methods Module</dd>
+  <dd>An anti-pattern for sharing behavior or separating concerns of an object.
+  See also: <em>GDD</em>
+  </dd>
+
+  <dt>GDD <i>(initialism)</i></dt>
+  <dd>Grep-driven Development</dd>
+  <dd>A software development process that relies on
+  searching full source code to find usages of methods and deduce intended
+  behavior of a piece of code. Often caused by lack of coherent and cohesive
+  design. See also: <em>BOMM</em>.
+  </dd>
+</dl>
+
+Thanks to fellow [Highgroover][highgroove], [Andy Lindeman][andy], for helping me
+to finally define these terms. Or at least, refine them.
+
+[highgroove]: http://highgroove.com Ruby and Ruby on Rails Consulting, Development, and Training
+[andy]: http://www.andylindeman.com

@@ -29,3 +29,26 @@ ul, ol {
   h1, h2, h3, h4, h5, h6 {
   font-family: 'Coda', cursive
 }
+
+dl {
+  margin-bottom: 1.5em;
+
+  dt {
+    font-weight: bolder;
+    margin-top: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    em, i {
+      font-weight: normal;
+    }
+    i {
+      color: $text-color-light;
+    }
+  }
+  dd {
+    margin-left: 1em;
+  }
+}
