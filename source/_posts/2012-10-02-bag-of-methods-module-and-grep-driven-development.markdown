@@ -11,8 +11,9 @@ terms for your consideration.
 <dl>
   <dt>BOMM <em>|bäm|</em> <i>(abbreviation)</i></dt>
   <dd>Bag of Methods Module</dd>
-  <dd>An anti-pattern for sharing behavior or separating concerns of an object.
-  See also: <em>GDD</em>
+  <dd>An anti-pattern for "sharing behavior" or "separating concerns" of an
+  object. In practice such module often contain code that is related in name or
+  function, but lacking a cohesive purpose. See also: <em>GDD</em>
   </dd>
 
   <dt>GDD <i>(initialism)</i></dt>
