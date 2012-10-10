@@ -9,19 +9,21 @@ Always looking for more concise ways to express ideas, I'd like to present two
 terms for your consideration.
 
 <dl>
-  <dt>BOMM <em>|bäm|</em> <i>(abbreviation)</i></dt>
+  <dt><a id='bomm'>BOMM</a> <em>|bäm|</em> <i>(abbreviation)</i></dt>
   <dd>Bag of Methods Module</dd>
   <dd>An anti-pattern for "sharing behavior" or "separating concerns" of an
   object. In practice such module often contain code that is related in name or
-  function, but lacking a cohesive purpose. See also: <em>GDD</em>
+  function, but lacking a cohesive purpose. See also: <em><a href='#gdd'
+  title='Grep-driven Development'>GDD</a></em>.
   </dd>
 
-  <dt>GDD <i>(initialism)</i></dt>
+  <dt><a id='gdd'>GDD</a> <i>(initialism)</i></dt>
   <dd>Grep-driven Development</dd>
   <dd>A software development process that relies on
   searching full source code to find usages of methods and deduce intended
   behavior of a piece of code. Often caused by lack of coherent and cohesive
-  design. See also: <em>BOMM</em>.
+  design. See also: <em><a href='#bomm' title='Bag of Methods
+  Module'>BOMM</a></em>.
   </dd>
 </dl>
 
