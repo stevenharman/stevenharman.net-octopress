@@ -12,7 +12,7 @@ terms for your consideration.
   <dt><a id='bomm'>BOMM</a> <em>|bäm|</em> <i>(abbreviation)</i></dt>
   <dd>Bag of Methods Module</dd>
   <dd>An anti-pattern for "sharing behavior" or "separating concerns" of an
-  object. In practice such module often contain code that is related in name or
+  object. In practice such modules often contain code that is related in name or
   function, but lacking a cohesive purpose. See also: <em><a href='#gdd'
   title='Grep-driven Development'>GDD</a></em>.
   </dd>
