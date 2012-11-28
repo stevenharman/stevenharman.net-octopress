@@ -26,8 +26,8 @@ testing. I believe {" testing is a tool to be used in guiding your design "}.
 
 ### An example
 
-I realize that it's unfair to pick on sample code use in talks, but "Problem
-2: Stubbing instead of mocking" provides a great illustration. Here the author
+I realize that it's unfair to pick on sample code use in talks, but _"Problem
+2: Stubbing instead of mocking"_ provides a great illustration. Here the author
 claims that we too often stub where we should be mocking. He gives the
 following snippet:
 
@@ -49,8 +49,8 @@ object and passed into the calculator.
 
 ### To stub or to mock?
 
-Forgiving that design issue for now lets get back to the author's point -
-should we mock or stub those methods?
+Forgiving that design issue for now, let's get back to the author's point -
+_should we mock or stub those methods?_
 
 The methods in question are queries. The `BalanceCalculator` presumably uses
 the results of those calls to do its work. So why do we need to set an
@@ -67,11 +67,11 @@ My heuristic is that stubs are for queries and mocks are for commands. In a
 very generic sense I'm talking about [Command-query separation][cqrs] applied
 to testing.
 
-### Its all design
+### It's all design
 
 In the end nearly everything we do is design in some sense. Testing is no
 exception, and is in my opinion a much larger part of the design of software
-systems that its given credit for. Or at least, I believe we should be
+systems than it is given credit for. Or at least, I believe we should be
 striving to make it so.
 
 
