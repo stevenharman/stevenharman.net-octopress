@@ -19,8 +19,8 @@ objects. My tests got faster, but they were still painful.
 
 ### A realization
 
-In 2008 I was talking with [Corey Haines][corey] about test pain, object
-oriented design, and "listening" to the former to influence the latter.
+In 2008 I was talking with [Corey Haines][corey] about test pain,
+object-oriented design, and "listening" to the former to influence the latter.
 [Scott Bellware][bellware] also contributed much insight, forcing me to really
 think about what I hoped to gain from writing tests.
 
