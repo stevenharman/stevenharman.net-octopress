@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Testing to Test First to Test Driven"
+title: "From Testing to Test-First to Test-Driven"
 date: 2012-05-08 11:16
 comments: true
 categories:
