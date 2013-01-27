@@ -26,7 +26,7 @@ testing. I believe {" testing is a tool to be used in guiding your design "}.
 
 ### An example
 
-I realize that it's unfair to pick on sample code use in talks, but _"Problem
+I realize that it's unfair to pick on sample code used in talks, but _"Problem
 2: Stubbing instead of mocking"_ provides a great illustration. Here the author
 claims that we too often stub where we should be mocking. He gives the
 following snippet:
@@ -44,8 +44,8 @@ This is a design issue! The `BalanceCalculator` is doing too much work. This is
 the "S" in SOLID - the Single Responsibility Principle. The friction of this
 test suggests that we need to adjust the design.
 
-For example, we could wrap the account info and account type into a cohesive
-object and passed into the calculator.
+For example, we could wrap the _account info_ and _account type_ into a cohesive
+object to be passed into the calculator.
 
 ### To stub or to mock?
 
@@ -53,15 +53,15 @@ Forgiving that design issue for now, let's get back to the author's point -
 _should we mock or stub those methods?_
 
 The methods in question are queries. The `BalanceCalculator` presumably uses
-the results of those calls to do its work. So why do we need to set an
+the results of those queries to do its work. So why do we need to set an
 expectation that we should call those methods? Afterall, if we don't call them
 we'll not have their resulting values, so we won't be able to do the work, so
 the test __should__ fail. Right?
 
-And If we don't call those methods and the test passes, then they don't need
-to be mocked nor stubbed as they aren't necessary.
+And if we don't call those methods and the test passes, then they neither need
+to be mocked nor stubbed as they are unnecessary.
 
-So to stub or mock... how do we know when to use which?
+So, to stub or mock... how do we know when to use which?
 
 My heuristic is that stubs are for queries and mocks are for commands. In a
 very generic sense I'm talking about [Command-query separation][cqrs] applied
