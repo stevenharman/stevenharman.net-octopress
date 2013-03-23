@@ -23,7 +23,11 @@ module HighlightCode
       if File.exist?(path)
         highlighted_code = File.read(path)
       else
-        highlighted_code = Net::HTTP.post_form(PYGMENTIZE_URL, {'lang'=>lang, 'code'=>code}).body
+        begin
+          highlighted_code = Net::HTTP.post_form(PYGMENTIZE_URL, {'lang'=>lang, 'code'=>code}).body
+        rescue MentosError
+          raise "Pygments can't parse unknown language: #{lang}."
+        end
         File.open(path, 'w') {|f| f.print(highlighted_code) }
       end
     else
