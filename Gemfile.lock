@@ -56,9 +56,11 @@ GEM
     rubypants (0.2.0)
     rubyzip (0.9.9)
     sass (3.2.5)
+    sass-globbing (1.0.0)
+      sass (>= 3.1)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.3.4)
+    sinatra (1.3.6)
       rack (~> 1.4)
       rack-protection (~> 1.3)
       tilt (~> 1.3, >= 1.3.3)
@@ -68,7 +70,7 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    tilt (1.3.3)
+    tilt (1.3.6)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -88,7 +90,8 @@ DEPENDENCIES
   rb-fsevent (~> 0.9)
   rdiscount (~> 1.6.8)
   rubypants (~> 0.2.0)
+  sass-globbing (~> 1.0.0)
   shotgun
-  sinatra (~> 1.3.3)
+  sinatra (~> 1.3.5)
   stringex (~> 1.4.0)
   thin
