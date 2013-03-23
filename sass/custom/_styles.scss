@@ -56,8 +56,10 @@ dl {
 section.elsewhere {
   margin-bottom: 0 !important;
 
-  .twitter-follow-button {
-    padding-top: 0.5em;
+  li {
+    border-bottom: none;
+
+    @include box-shadow(none);
   }
 }
 
