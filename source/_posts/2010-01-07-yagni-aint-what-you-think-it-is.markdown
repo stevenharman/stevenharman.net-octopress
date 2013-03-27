@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "YAGNI Ain't What You Thing It Is"
+title: "YAGNI Ain't What You Think It Is"
 date: 2010-01-07 13:33
 comments: true
 categories:
