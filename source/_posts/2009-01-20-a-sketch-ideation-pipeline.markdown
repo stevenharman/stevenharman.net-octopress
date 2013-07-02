@@ -123,10 +123,9 @@ If you’re looking for more information on some of the terms or concepts I’ve
 mentioned here, be sure to check out Karl Scotland’s excellent round-up of
 links/references to materials on [Kanban Software Development][6].
 
-   [1]: http://stevenharman.net/images/stevenharman_net/blog/WindowsLiveWriter/ASketchIdeationPipeline_9F4E/ideation-pipeline_thumb_2.png (Initial sketch of our Ideation Pipeline)
    [2]: http://en.wikipedia.org/wiki/Value_Stream_Mapping (Value Stream Mapping)
    [3]: http://en.wikipedia.org/wiki/Kanban (Kanban)
    [4]: http://arcware.net/dmzing-the-backlog/ (DMZing the Backlog)
-   [5]: http://www.amazon.com/Implementing-Lean-Software-Development-Addison-Wesley/dp/0321437381 (Implementing Lean Software Development: From Concept to Cash)
+   [5]: http://www.amazon.com/dp/0321437381/?tag=stevenharman-20 (Implementing Lean Software Development: From Concept to Cash)
    [6]: http://availagility.wordpress.com/kanban/ (Useful links or references to material on Kanban Software Development.)
    [context-spec]: http://stevenharman.net/toward-a-better-use-of-context-specification (Towared a Better Use of Context/Specification)
