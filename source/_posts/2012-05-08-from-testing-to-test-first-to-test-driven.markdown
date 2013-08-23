@@ -24,7 +24,7 @@ object-oriented design, and "listening" to the former to influence the latter.
 [Scott Bellware][bellware] also contributed much insight, forcing me to really
 think about what I hoped to gain from writing tests.
 
-Those conversations help to crystallized it for me: the root cause of the pain
+Those conversations help to crystallize it for me: the root cause of the pain
 was not the tests, but the design of the code under test. I had been doing
 test-_first development_, not test-**driven design**.
 
@@ -42,7 +42,7 @@ pain; lower your pain threshold and then make it stop hurting!
 
 It was by no means an overnight endeavour. It literally took years of work for
 me to figure this out, and I'm both happy and proud to say that _I'm still
-learning_.  I hope by putting my experience out there yours can be better,
+learning_.  I hope by putting my experience out there, yours can be better,
 faster, MOAR!
 
 [corey]: http://coreyhaines.com/ "The Software Journeyman"
