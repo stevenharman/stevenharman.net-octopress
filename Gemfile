@@ -26,4 +26,5 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'heroku'
   gem 'shotgun'
+  gem 'directory_watcher', '1.4.1'
 end
