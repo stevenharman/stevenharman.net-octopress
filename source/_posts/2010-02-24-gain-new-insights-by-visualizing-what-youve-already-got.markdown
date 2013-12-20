@@ -2,7 +2,7 @@
 layout: post
 title: "Gain New Insights by Visualizing What You’ve Already Got"
 date: 2010-02-24 22:32
-comments: true
+comments: false
 categories:
 ---
 

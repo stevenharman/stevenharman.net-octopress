@@ -2,7 +2,7 @@
 layout: post
 title: "How-To: Ctrl + Alt + Del in Remote Desktop"
 date: 2007-08-29 12:11
-comments: true
+comments: false
 categories:
 ---
 I’m a fan of [Microsoft’s Remote Desktop][rdp]; it’s built into

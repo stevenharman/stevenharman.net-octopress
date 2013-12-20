@@ -2,7 +2,7 @@
 layout: post
 title: "A Sketch of our Ideation Pipeline"
 date: 2009-01-20 11:16
-comments: true
+comments: false
 categories:
 ---
 

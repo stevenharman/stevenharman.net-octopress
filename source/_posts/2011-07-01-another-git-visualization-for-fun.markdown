@@ -2,7 +2,7 @@
 layout: post
 title: "Another Git Repository Visualization, Just for Fun."
 date: 2011-07-01 21:46
-comments: true
+comments: false
 categories:
 ---
 

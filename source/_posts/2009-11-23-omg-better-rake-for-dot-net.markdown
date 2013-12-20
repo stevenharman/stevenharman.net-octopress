@@ -2,7 +2,7 @@
 layout: post
 title: "OMG, Better Rake (for .net)!"
 date: 2009-11-23 13:58
-comments: true
+comments: false
 categories:
 ---
 If you ask me, when it comes tools for writing automated build scripts

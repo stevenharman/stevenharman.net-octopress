@@ -2,7 +2,7 @@
 layout: post
 title: "An Io Language Vim Plugin"
 date: 2011-02-11 16:27
-comments: true
+comments: false
 categories:
 ---
 

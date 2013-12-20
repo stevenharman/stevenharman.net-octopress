@@ -2,7 +2,7 @@
 layout: post
 title: "Want to Make Money? Make Getting Paid the Easy Part!"
 date: 2010-04-07 12:52
-comments: true
+comments: false
 categories:
 ---
 At least half a dozen times in the past three days I've been so annoyed

@@ -2,7 +2,7 @@
 layout: post
 title: "A Handful of Git Workflows for the Agilist"
 date: 2010-08-12 12:44
-comments: true
+comments: false
 categories:
 ---
 A few months back I gave [little talk][1] on the darling <acronym

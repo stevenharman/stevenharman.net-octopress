@@ -2,7 +2,7 @@
 layout: post
 title: "Toward a Better Use of Context/Specification"
 date: 2009-05-27 06:42
-comments: true
+comments: false
 categories:
 ---
 
