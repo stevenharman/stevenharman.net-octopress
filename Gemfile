@@ -19,7 +19,6 @@ source "https://rubygems.org"
   gem 'rack', '~> 1.4'
   gem 'sinatra', '~> 1.4'
   gem 'rack-rewrite'
-  gem 'rack-protection'
   gem 'thin'
 
 group :development do

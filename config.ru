@@ -1,12 +1,9 @@
 require 'bundler/setup'
 require 'rack/rewrite'
 require 'sinatra/base'
-require 'rack/protection'
 
 # The project root directory
 $root = ::File.dirname(__FILE__)
-
-use Rack::Protection, except: :session_hijacking
 
 use Rack::Rewrite do
   old_posts = { 'a-first-step-to-better-user-experience-thinking-like-a' => 'a-first-step-to-better-user-experience-thinking-like-a-human',
