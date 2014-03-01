@@ -6,8 +6,8 @@ comments: true
 categories:
 ---
 
-**TL,DR;** When building an application using Rails, I prefer to keep all
-my model in `app/models/`. I reserve `lib/` for those other things - those
+**TL,DR;** When building an application using Rails, I prefer to keep all my
+model in `app/models/`. I reserve `lib/` for those other things - those
 not-my-domain-things. I'd like to explain the *what* and *why*.
 
 {% img right /images/posts/deep-greens-med.jpg 300 "Boundaries Amongst the Fields; Deep Greens" %}
@@ -23,8 +23,8 @@ to [MVC Model 2][mvc2_pattern]... but I digress.
 **MVC** stands for Model, View, Controller. In Rails-land we know what the
 **Controllers** are. And while we don't have **Views** in the way that MVC
 meant, we do have view-templates, and we call those our views. The **Model** is
-meant to be all the things it takes to model our problem domain. As applied
-to Rails, the **Model** seems the most misunderstood/misused of the MVC
+meant to be all the things it takes to model our problem domain. As applied to
+Rails, the **Model** seems the most misunderstood/misused of the MVC
 triumvirate.
 
 <!-- more -->
@@ -37,18 +37,18 @@ that directory had grown full of bloated, tightly coupled, low cohesion
 
 ## Models Too Fat?
 
-Eventually we realized that shoving all those disparate concerns into a
-single class was a Bad Idea™. There was a movement afoot to thin down our now
+Eventually we realized that shoving all those disparate concerns into a single
+class was a Bad Idea™. There was a movement afoot to thin down our now
 overly-fat models. So, we re-learned [some forgotten lessons][pojo] and the use
 of POROs became a Good Thing™. We needed to break our domain models down into
 smaller, more cohesive objects, but we had a new problem. *Where to put these
 new files?*
 
-As Rails as *reserved* `app/models/` directory for `ActiveRecord::Base`-derived
-objects, we had to find a new home for those POROs. As luck would have it,
-Rails had given us a `lib/` directory, and that thing was basically deserted.
-We began breaking up our model and littering it amongst the `app/models/` and
-`lib/` directories.
+As Rails had *reserved* `app/models/` directory for
+`ActiveRecord::Base`-derived objects, we had to find a new home for those
+POROs. As luck would have it, Rails had given us a `lib/` directory, and that
+thing was basically deserted. We began breaking up our model and littering it
+amongst the `app/models/` and `lib/` directories.
 
 Our model had become more loosely coupled, with more cohesive parts, but it
 wasn't living together. Why are we forcibly segregating the
