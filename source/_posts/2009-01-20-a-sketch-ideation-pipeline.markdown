@@ -37,41 +37,42 @@ upon it.
 
 The Standardized Work (designated by the blue text in the lower box of each
 stage) in this stage is pretty basic, though not necessarily easy. In essence,
-an idea needs to be evaluated to determine it will deliver value.
+an idea needs to be evaluated to determine if it will deliver value.
 
 And what does _deliver value_ mean?
 
 > **Value is…**
 >
-> Seen though the eyes of those who pay for, use, and derive value from the systems we create.
+> Seen though the eyes of those who pay for, use, and derive value from the
+> systems we create.
 
 There are many factors that go into determining if something is or is not
-valuable. In our case it’s things like market demand, product vision and
+valuable. In our case it’s things like market demand, product vision, and
 roadmap, feature parity with competitors, availability of resources, effort,
 etc… Also, value is a temporal thing. So while an idea might not hold much
 promise for delivering value now, that doesn’t mean that it won’t at some point
 in the future.
 
 If it’s determined that an idea will deliver value now, the idea card is moved
-into the Ready for Decomposition state. However, if the idea won’t deliver
+into the **Ready for Decomposition** state. However, if the idea won’t deliver
 value now (or at least within the very short, foreseeable future), it’s moved
-to a _Never_ state. In the physical world that means the Idea Kanban is taken
+to a **Never** state. In the physical world that means the Idea Kanban is taken
 off the board.
 
 _But wait… if the idea has potential to provide value in the future, and you’ve
 moved it to Never, won’t we lose track of it?_
 
-**YES, exactly!** And you know what? We don’t care! If the idea truly has
-potential for some future value, it will come back into our pipeline on its
-own. Why waste time, effort, and money keeping track of a huge backlog of stuff
-that might not ever happen? [DMZ that stuff][4].
+YES, exactly! And you know what? We don’t care! If the idea truly has potential
+for some future value, it will come back into our pipeline on its own. Why
+waste time, effort, and money keeping track of a huge backlog of stuff that
+might not ever happen? [DMZ that stuff][4].
 
 ### Ready for Decomposition
 
 Right now we have no queue limits on our Ready for Decomposition queue because
 we’re
 
-  * thinking our throughput will be high enough to keep the queue short anyhow
+  * thinking our throughput will be high enough to keep the queue short
   * going to help our customers be honest with themselves and diligent in
     determining which ideas really will provide value
 
