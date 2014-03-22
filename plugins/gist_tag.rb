@@ -78,6 +78,13 @@ module Jekyll
       gist_url = get_gist_url_for(gist, file)
       data     = get_web_content(gist_url)
 
+      locations = Array.new
+      while (data.code.to_i == 301 || data.code.to_i == 302)
+        data = handle_gist_redirecting(data)
+        break if locations.include? data.header['Location']
+        locations << data.header['Location']
+      end
+
       if data.code.to_i != 200
         raise RuntimeError, "Gist replied with #{data.code} for #{gist_url}"
       end
@@ -91,6 +98,7 @@ module Jekyll
       if redirected_url.nil? || redirected_url.empty?
         raise ArgumentError, "GitHub replied with a 302 but didn't provide a location in the response headers."
       end
+
       get_web_content(redirected_url)
     end
 
@@ -107,12 +115,6 @@ module Jekyll
       https.verify_mode = OpenSSL::SSL::VERIFY_NONE
       request           = Net::HTTP::Get.new raw_uri.request_uri
       data              = https.request request
-
-      if data.code.to_i == 301 || data.code.to_i == 302
-        data = handle_gist_redirecting(data)
-      end
-
-      data
     end
   end
 
