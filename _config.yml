@@ -58,6 +58,11 @@ default_asides: [asides/recent_posts.html, asides/github.html, custom/asides/els
 # post_asides:
 # page_asides:
 
+# ------------------------ #
+# Standealone static files #
+# ------------------------ #
+include: ['.well-known']
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #

@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/stevenharman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://stevenharman.net
+  * I am stevenharman (https://keybase.io/stevenharman) on keybase.
+  * I have a public key with fingerprint 3CD0 F20C 772A 5D94 1A25  10E9 683E 9FB9 9002 131F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "3cd0f20c772a5d941a2510e9683e9fb99002131f",
+            "host": "keybase.io",
+            "key_id": "683E9FB99002131F",
+            "uid": "8cb98d58104075485c1f71771b8d1800",
+            "username": "stevenharman"
+        },
+        "service": {
+            "hostname": "stevenharman.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395930098,
+    "expire_in": 157680000,
+    "prev": "17225abf508cb0404fd184fe10393ab9cb96005cc6057575340c3945de0bf100",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owGbwMvMwMWYYTd/5wQmYXnG0wd+JTEEmxh/qlZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSsbJKQZpRgbJ5uZGiaYpliaGiUamhgaplmYWxqmWaUmWlgYGRobGhmlK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQFKje1dLNCabeDShXCpawSE6ytEgxtTA0
+MDEwNzWxME02TDM3NDc3TLJIMbQwMAApLE4tykvMTQWqLi5JLUvNy0gsyk3MU6rV
+UQLKlGUmp4LcDbIeiyq9vNQSoBkFRfkl+cn5OUDZjJKSAiuQ5pLKApDq8tSkeKg5
+8UmZeSlA/wM1lKUWFWfm5ylZGQJVJpdkggw2NLY0tTQ2MLC00FFKrSjILEqNzwSp
+MDU3A7rUwABkTWoZ0EhDcyMj08SkNFMDoPeAHjNJA/rFJC3V0MDY0jgxyRLoZzMD
+A9PkZDMDU3MgNDYxSDa2NDFNSTVISjMEe7o4tTAvX8nKyATozsR0kKcy0/MSS0qL
+UpVqO5lkWBgYuRjYWJlAUcjAxSkAi9g5qgIMXdxXf/jXL3Qt3BPL95zJap9mypWp
+iX+Uy3bYPP9dpqW4L3P7Me3POR+efMjPFTPcISo7m2nRjtlqXlc/1ORfWywf/P/z
+1IcHH9Zui64V5trjJnGIXST7/3m/+a1hZWFbvp30mKO4V7Ij4wvzPsY/38LP/Ezs
+uvjp3NL8Xn0hExXxiqj3pU4bus+8bk1zLGPQYBLV07kpOtXuTu/6hnXq0xKOdAkq
+/OHRuvSRN4pzSlJ46fmtQvxMX42vrNomGrRCye1lnICNxh/7w5umtsd9TueqvvWC
+d4/IhTW+HmvvOe2f/XU719nGFb+uRXVvLuvId666uuLJ7abz4Rdv1khruWdfjk88
+rK7qNZtrzceo45GPTnT7+hp/999n1j9t3nqfcu7jrbctv/74rpX8Wvb73roPyVzx
++sfYTEyn2Gbm5QWIiz9ZyTHzDTPPt+PZuz1PM2tFqnTtE7dafHPa7Q2vdnXn+4V5
+i3qYZcXu6ItY6iAVUs6oapYWd0Hwk9yZ1GIXCbONFrprppYqRmUHGVbe/ryzdlHg
+xoz3y3ZWrO+7Kzk9ZJpV7/NdSq9yMsoWdmn+chO+2SbN083fvKvydobLiQdOry5c
+C68+qWN19KWy4uKQe8dvXXNr6HmzS26fdhB/zxl9v5dtqRNYDQSdJDmmRpz6o8zR
+tuZ+dZHaxO1OZcVCTBxMf1SSBBLVHgT3+s50/T7JqXpRwS7nRAA=
+=22fF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stevenharman
+
+==================================================================
+
