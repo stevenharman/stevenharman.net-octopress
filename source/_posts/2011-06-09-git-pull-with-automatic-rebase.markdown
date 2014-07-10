@@ -41,16 +41,16 @@ and rebase your commits on top of the new commits from the remote. This is the
 You can tell git to use rebase, rather than merge, in one of two ways, depending on
 your situation.
 
-{% codeblock Force all new branches to automatically use rebase lang:bash %}
-$ git config branch.autosetuprebase always
-{% endcodeblock %}
+```
+$ git config branch.autosetuprebase always # Force all new branches to automatically use rebase
+```
 
 You can add the `--global` switch to have all future branches, in all
 repositories on this machine, behave this way.
 
-{% codeblock Force existing branches to use rebase. lang:bash %}
-$ git config branch.*branch-name*.rebase true
-{% endcodeblock %}
+```
+$ git config branch.*branch-name*.rebase true # Force existing branches to use rebase.
+```
 
 <h3>Get more info</h3>
 
