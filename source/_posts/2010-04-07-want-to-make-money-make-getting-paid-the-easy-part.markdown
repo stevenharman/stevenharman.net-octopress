@@ -22,7 +22,7 @@ and make the math easy for everyone. Or have a cash register at each
 kiosk. Or, here's a novel idea, start accepting plastic!
 
 Need to renew your vehicle registration? Just do it online! But be
-prepared to spend an extra $5 for the *convenience* of, you knowâ€¦
+prepared to spend an extra $5 for the *convenience* of, you know…
 actually giving them the money now rather than sending a check and them
 having to pay someone to physically handle the thing.
 
@@ -30,5 +30,5 @@ having to pay someone to physically handle the thing.
 
  1. If you're selling something someone wants: **make it easy for them to
 give you their money!**
- 2. If you're selling something someone does not want: **make them want
+ 1. If you're selling something someone does not want: **make them want
 it!**
