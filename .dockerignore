@@ -1,0 +1,11 @@
+.git
+.DS_Store
+.sass-cache
+.gist-cache
+.pygments-cache
+*.swp
+*.old
+public
+source/stylesheets/screen.css
+node_modules
+vendor
