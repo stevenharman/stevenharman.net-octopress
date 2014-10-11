@@ -1,8 +1,9 @@
-.git
 .DS_Store
-.sass-cache
+.bundle
 .gist-cache
+.git
 .pygments-cache
+.sass-cache
 *.swp
 *.old
 public

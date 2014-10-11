@@ -8,10 +8,14 @@ RUN apt-get update \
 
 ENV RACK_ENV production
 
-COPY . /usr/src
 WORKDIR /usr/src
 
-RUN bundle --deployment
+COPY Gemfile /usr/src/
+COPY Gemfile.lock /usr/src/
+RUN bundle install --deployment --without development
+
+COPY . /usr/src
+
 RUN bundle exec rake generate
 
 EXPOSE 80
