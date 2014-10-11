@@ -6,13 +6,15 @@ require 'sinatra/base'
 $root = ::File.dirname(__FILE__)
 
 use Rack::Rewrite do
+  app_host = ENV['APP_HOST'] || 'stevenharman.net'
+
   old_posts = { 'a-first-step-to-better-user-experience-thinking-like-a' => 'a-first-step-to-better-user-experience-thinking-like-a-human',
                 'make-money-by-making-getting-paid-easy' => 'want-to-make-money-make-getting-paid-the-easy-part',
                 'yagni-ainrsquot-what-you-think-it-is' => 'yagni-aint-what-you-think-it-is',
                 'omg-better-rake-for-.net' => 'omg-better-rake-for-dot-net' }
 
-  r301 %r{.*}, 'http://stevenharman.net$&', :if => Proc.new { |rack_env|
-    rack_env['SERVER_NAME'] != 'stevenharman.net' && ENV['RACK_ENV'] == 'production'
+  r301 %r{.*}, %{http://#{app_host}$&}, :if => Proc.new { |rack_env|
+    rack_env['SERVER_NAME'] != app_host && ENV['RACK_ENV'] == 'production'
   }
 
   r301 %r{^/blog/default\.aspx$}i, '/'
