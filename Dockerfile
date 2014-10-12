@@ -2,7 +2,7 @@ FROM ruby:2.1.3
 MAINTAINER Steven Harman <steven@harmanly.com>
 
 RUN apt-get update \
-    && apt-get install -y node \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y node \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
