@@ -3,6 +3,7 @@ MAINTAINER Steven Harman <steven@harmanly.com>
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y node \
+    && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -16,7 +17,8 @@ RUN bundle install --deployment --without development
 
 COPY . /usr/src
 
-RUN bundle exec rake generate
+RUN bundle exec rake generate \
+    && rm -rf source sass plugins
 
 EXPOSE 80
 CMD bundle exec thin start -R config.ru -e $RACK_ENV -p 80
