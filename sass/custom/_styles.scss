@@ -61,6 +61,17 @@ section.elsewhere {
 
     @include box-shadow(none);
   }
+
+  .harmanly_photography {
+    white-space: initial;
+    text-decoration: none;
+
+    img {
+      border: none;
+      width: 2em;
+      vertical-align: middle;
+    }
+  }
 }
 
 section.googleplus {
