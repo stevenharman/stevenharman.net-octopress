@@ -62,6 +62,27 @@ section.elsewhere {
     @include box-shadow(none);
   }
 
+  .codementor-badge {
+    $brand-color: rgb(7, 54, 72); // from Codementor.io
+
+    a {
+      background: #FFF;
+      border-radius: 4px;
+      border: 2px $brand-color solid;
+      box-shadow: rgba(#000, 0.15) 0 1px 4px;
+      color: $brand-color;
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-transform: lowercase;
+    }
+  }
+
   .harmanly_photography {
     white-space: initial;
     text-decoration: none;
