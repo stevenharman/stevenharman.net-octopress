@@ -5,31 +5,20 @@ date: 2010-01-07 13:33
 comments: true
 categories:
 ---
-In the software development vernacular the term <acronym title="You
-aren't gonna need it">YAGNI</acronym> is often used as a device to put
-down attempts at prematurely adding functionality - things which are
-only speculatively required. This makes sense given that is basically
-the [definition][1] that [Ron Jeffries][2] and our <acronym
-title="eXtreme Programming">XP</acronym> forefathers came up with so
-long ago.
+
+In the software development vernacular the term <acronym title="You aren't gonna need it">YAGNI</acronym> is often used as a device to put down attempts at prematurely adding functionality - things which are only speculatively required.
+This makes sense given that is basically the [definition][1] that [Ron Jeffries][2] and our <acronym title="eXtreme Programming">XP</acronym> predecessors came up with so long ago.
 
 ### Is that the whole story?
 
-[{% img right /images/posts/stop-sign.jpg %}][3] In short, I don't think
-so.
+[{% img right /images/posts/stop-sign.jpg %}][3] In short, I don't think so.
 
-I've long believed there was more to YAGNI than what had been
-canonically defined and was commonly understood. However, until recently
-I was never able to put my finger on what was missing.
+I've long believed there was more to YAGNI than what had been canonically defined and was commonly understood.
+However, until recently I was never able to put my finger on what was missing.
 
-While listening to an episode of [Industry Misinterpretations][4] I heard [Kent
-Beck][5] make a subtle point about the need to make progress being more
-important than the completeness of the thing you're building at the point
-you're building it. Lending from Kent's insight and mixing in much of my own
-experience, I realized YAGNI is not about delaying building things until you
-need them; it's that gaining real experience in the problem domain, while
-making concrete progress, is more important than trying to achieve a complete
-solution *right now*.
+While listening to an episode of [Industry Misinterpretations][4] I heard [Kent Beck][5] make a subtle point about the need to make progress being more important than the completeness of the thing you're building at the point you're building it.
+Lending from Kent's insight and mixing in much of my own experience, I realized YAGNI is not about delaying building things until you need them;
+it's that gaining real experience in the problem domain, while making concrete progress, is more important than trying to achieve a complete solution *right now*.
 
 Do you think it's too early to update the [Wikipedia article][6]?
 
