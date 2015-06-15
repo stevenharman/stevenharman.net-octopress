@@ -110,7 +110,6 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rubypants (0.2.0)
     rubyzip (1.1.7)
     safe_yaml (1.0.4)
     sass (3.4.14)
@@ -142,7 +141,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (~> 4.2.9)
-  compass (~> 1.0)
+  compass (~> 1.0.1)
   haml (~> 4.0)
   heroku
   jekyll (~> 2.0)
@@ -154,7 +153,6 @@ DEPENDENCIES
   rake (~> 10.0)
   rb-fsevent (~> 0.9)
   rdiscount (~> 2.0)
-  rubypants (~> 0.2.0)
   sass-globbing (~> 1.1)
   shotgun
   sinatra (~> 1.4)
