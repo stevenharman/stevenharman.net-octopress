@@ -6,9 +6,9 @@ comments: false
 categories:
 ---
 
-I don’t know about you, but I like pretty things. Things that engage me. Shiny things. I enjoy seeing <em>the same old thing</em> in new and interesting ways. I suppose I’m just a visual kinda’ guy.
+I don’t know about you, but I like pretty things. Things that engage me. Shiny things. I enjoy seeing <em>the same old thing</em> in new and interesting ways. I suppose I’m just a visual kinda’ person.
 
-Unfortunately, the desire for visual representation is at odds with the high bandwidth flood of information we’re subjected to these days. Even if we manage to trim the overwhelming flood of information down to a laser-focused stream, it still takes an immense amount of effort to make sense of it.
+Unfortunately, the desire for visual representation is at odds with the high bandwidth flood of information we’re subjected to these days. Even if we manage to trim the overwhelming flood of information down to a laser-focused stream, it takes an immense amount of effort to make sense of it.
 
 <h3>For example</h3>
 
@@ -22,9 +22,9 @@ However, thanks to projects like <a title="Processing" href="http://processing.o
 
 <h3>An example</h3>
 
-The video to the right is an example of one such visualization I produced using <a title="Gource - software version control visualization" href="http://code.google.com/p/gource/" rel="external">Gource</a> to analyze the Git repository of one of the product’s we’ve build at <a title="VersionOne: Simplifying Software Delivery" href="http://versionone.com/" rel="external">VersionOne</a>.
+The above video is an example of one such visualization I produced using <a title="Gource - software version control visualization" href="http://code.google.com/p/gource/" rel="external">Gource</a> to analyze the Git repository of one of the product’s we’ve build at <a title="VersionOne: Simplifying Software Delivery" href="http://versionone.com/" rel="external">VersionOne</a>.
 
-For reference, each branch (line) is a different directory containing files. Each leaf (dot) is a file, and different file types (Ruby, JavaScript, C#, etc.) have different colors. Each contributor is represented by their name and Gravatar.  The colored lines that occasionally connect a contributor to a file are color coded to represent adds (green), changes (orange) and deletes (red).
+For reference, each branch (line) is a different directory containing files. Each leaf (dot) is a file, with different file types (Ruby, JavaScript, C#, etc.) having different colors. Each contributor is represented by their name and Gravatar.  The colored lines that occasionally connect a contributor to a file are color coded to represent adds (green), changes (orange) and deletes (red).
 
 A few interesting things this visualization leads me to think about are
 
