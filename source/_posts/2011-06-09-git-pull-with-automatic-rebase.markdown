@@ -31,10 +31,10 @@ then merge any local changes in, resulting in the merge bubbles.
 
 <h3>A better approach</h3>
 
-I typically use the same workflow as above with one tweak. Rather than `git
-pull` I use `git pull --rebase` which will fetch the remote commits,
-and rebase your commits on top of the new commits from the remote. This is the
-&acirc;&euro;&oelig;re-writing&acirc;&euro; of history folks often talk about.
+I typically use the same workflow as above with one tweak.
+Rather than `git pull` I use `git pull --rebase`.
+The `--rebase` option will fetch the remote commits and rebase your commits on top of the new commits from the remote.
+This is the "re-writing" of history folks often talk about.
 
 <h3>Make it better, automatically!</h3>
 
