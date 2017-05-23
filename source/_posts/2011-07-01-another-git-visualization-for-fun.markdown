@@ -14,7 +14,7 @@ Wow… that really sounded like a sales pitch, didn’t it? I hate sales pitches
 
 Enough of that. Enjoy!
 
-<object width="560" height="315"><param name="movie" value="https://www.youtube.com/v/fYv9XgzY9Cc?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/fYv9XgzY9Cc?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fYv9XgzY9Cc" frameborder="0" allowfullscreen></iframe>
 
 [gain-new-insights]: {{site.url}}/gain-new-insights-by-visualizing-what-youve-already-got "Gain New Insights by Visualizing What You’ve Already Got"
 [versionone]: http://versionone.com/ "VersionOne - it's pronounced Agilé"
