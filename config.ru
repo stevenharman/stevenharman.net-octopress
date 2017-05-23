@@ -13,7 +13,7 @@ use Rack::Rewrite do
                 'yagni-ainrsquot-what-you-think-it-is' => 'yagni-aint-what-you-think-it-is',
                 'omg-better-rake-for-.net' => 'omg-better-rake-for-dot-net' }
 
-  r301 %r{.*}, %{http://#{app_host}$&}, :if => Proc.new { |rack_env|
+  r301 %r{.*}, %{https://#{app_host}$&}, :if => Proc.new { |rack_env|
     rack_env['SERVER_NAME'] != app_host && ENV['RACK_ENV'] == 'production'
   }
 

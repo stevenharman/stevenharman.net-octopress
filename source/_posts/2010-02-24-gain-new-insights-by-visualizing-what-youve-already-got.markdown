@@ -14,7 +14,7 @@ Unfortunately, the desire for visual representation is at odds with the high ban
 
 For years the primary way we’ve looked at the activity or interaction within various source control management systems is via log files. Yep… plain, text-laden, indecipherable logs chock full of entries each a similitude of it’s predecessors.
 
-<object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<object width="560" height="315"><param name="movie" value="https://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/S_mMKXFaLaE?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 <!-- more -->
 
