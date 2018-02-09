@@ -13,9 +13,13 @@ use Rack::Rewrite do
                 'yagni-ainrsquot-what-you-think-it-is' => 'yagni-aint-what-you-think-it-is',
                 'omg-better-rake-for-.net' => 'omg-better-rake-for-dot-net' }
 
-  r301 %r{.*}, %{https://#{app_host}$&}, :if => Proc.new { |rack_env|
-    rack_env['SERVER_NAME'] != app_host && ENV['RACK_ENV'] == 'production'
-  }
+  if ENV['RACK_ENV'] == 'production'
+    r301 %r{.*}, %{https://#{app_host}$&}, scheme: 'http'
+
+    r301 %r{.*}, %{https://#{app_host}$&}, if: Proc.new { |rack_env|
+      rack_env['SERVER_NAME'] != app_host
+    }
+  end
 
   r301 %r{^/blog/default\.aspx$}i, '/'
   r301 %r{^/blog/archives\.aspx$}i, '/archives'
@@ -35,7 +39,7 @@ class SinatraStaticServer < Sinatra::Base
   end
 
   not_found do
-    send_file(File.join(File.dirname(__FILE__), 'public', '404.html'), {:status => 404})
+    send_file(File.join(File.dirname(__FILE__), 'public', '404.html'), {status: 404})
   end
 
   def send_sinatra_file(path, &missing_file_block)
