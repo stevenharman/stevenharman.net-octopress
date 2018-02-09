@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-  ruby '2.3.4'
+  ruby '2.5.0'
 
   gem 'rake', '~> 11.0'
   gem 'jekyll', '~> 2.0'
@@ -8,7 +8,7 @@ source "https://rubygems.org"
   gem 'octopress-date-format', '~> 2.0'
   gem 'jekyll-sitemap'
   gem 'rdiscount', '~> 2.0'
-  gem 'RedCloth', '~> 4.2.9'
+  gem 'RedCloth', '~> 4.3'
   gem 'haml', '~> 4.0'
   gem 'compass', '~> 1.0.1'
   gem 'sass-globbing', '~> 1.1'
